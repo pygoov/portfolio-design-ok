@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Первый пример новой структуры портфолио: разделы и кейсы собираются из content layer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../site.css" />
+    <title>Работы | Олеся Караульных</title>
+  </head>
+  <body id="top">
+    
+    <div class="page-shell">
+      <header class="site-header">
+  <div class="container site-header__row">
+    <a class="brand" href="../" aria-label="На главную">
+      <span class="brand__mark">
+        <img
+          class="brand__logo"
+          src="../assets/reference/logo.webp"
+          alt="Логотип Олеси Караульных"
+        />
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Designer Portfolio</span>
+        <span class="brand__title">Олеся Караульных</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="../">Главная</a>
+      <a href="../work/">Работы</a>
+      
+        <a href="../cases/pinque/">Кейс</a>
+      
+    </nav>
+  </div>
+</header>
+
+      <main>
+
+<section class="section page-intro">
+  <div class="container">
+    <div class="page-intro__panel">
+      <p class="page-eyebrow">Work</p>
+      <h1 class="page-title">Разделы портфолио теперь собираются из данных</h1>
+      <p class="page-lead">
+        Это первый рабочий срез новой структуры: taxonomy лежит в `content/`,
+        web-ассеты лежат в `media/web/`, а страницы автоматически генерируются
+        шаблонами Eleventy.
+      </p>
+    </div>
+
+    <div class="section-grid">
+      
+        <a class="section-card" href="../work/grafika/">
+          <p class="section-card__eyebrow">Раздел</p>
+          <h2 class="section-card__title">Графика</h2>
+          <p class="section-card__lead">Коммерческая графика с акцентом на карточки маркетплейсов, продуктовую подачу и визуальную систему бренда.</p>
+          <p class="section-card__meta">
+            1 подраздел · 1
+            кейс
+          </p>
+        </a>
+      
+    </div>
+  </div>
+</section>
+
+
+  <section class="section section--compact">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Первый пример кейса</h2>
+        <p class="section-lead">
+          Один реальный проект проходит всю новую цепочку: entry -> section ->
+          subsection -> case page.
+        </p>
+      </div>
+
+      
+      <article class="entry-card">
+  <a class="entry-card__media" href="../cases/pinque/">
+    <img
+      class="entry-card__image"
+      src="../assets/media/entries/pinque/cover.webp"
+      alt="Обложка карточки Pinque с ярким продуктовым кадром сахарного скраба."
+      loading="lazy"
+    />
+  </a>
+
+  <div class="entry-card__body">
+    <p class="entry-card__eyebrow">Pinque · 2024</p>
+    <h3 class="entry-card__title">
+      <a href="../cases/pinque/">Pinque</a>
+    </h3>
+    <p class="entry-card__summary">Серия карточек для линейки сахарного скраба Pinque: яркая обложка, продуктовые офферы и слайды с ингредиентами в единой визуальной системе.</p>
+    <p class="entry-card__meta">
+      Кейс
+    </p>
+  </div>
+</article>
+
+    </div>
+  </section>
+
+</main>
+      <footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__panel">
+      <p class="site-footer__text">
+        Первый data-driven пример: разделы, подразделы и кейсы уже собираются из
+        `content/` и `media/web/`.
+      </p>
+      <a class="site-footer__top" href="#top">Наверх</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

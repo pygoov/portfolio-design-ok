@@ -1,0 +1,21 @@
+<article class="entry-card">
+  <a class="entry-card__media" href="{{ root }}{{ entry.href }}">
+    <img
+      class="entry-card__image"
+      src="{{ root }}{{ entry.coverUrl }}"
+      alt="{{ entry.assets[0].alt }}"
+      loading="lazy"
+    />
+  </a>
+
+  <div class="entry-card__body">
+    <p class="entry-card__eyebrow">{{ entry.client }} · {{ entry.year }}</p>
+    <h3 class="entry-card__title">
+      <a href="{{ root }}{{ entry.href }}">{{ entry.title }}</a>
+    </h3>
+    <p class="entry-card__summary">{{ entry.summary }}</p>
+    <p class="entry-card__meta">
+      {{ "Кейс" if entry.type == "case" else "Галерея" }}
+    </p>
+  </div>
+</article>

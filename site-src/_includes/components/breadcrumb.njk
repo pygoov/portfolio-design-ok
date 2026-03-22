@@ -1,0 +1,15 @@
+{% if breadcrumbItems and breadcrumbItems.length %}
+  <nav class="breadcrumb" aria-label="Хлебные крошки">
+    <ol class="breadcrumb__list">
+      {% for item in breadcrumbItems %}
+        <li class="breadcrumb__item">
+          {% if item.href %}
+            <a href="{{ item.href }}">{{ item.label }}</a>
+          {% else %}
+            <span aria-current="page">{{ item.label }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </nav>
+{% endif %}

@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: portfolio.subsections
+  size: 1
+  alias: subsection
+permalink: "work/{{ subsection.section.slug }}/{{ subsection.slug }}/index.html"
+eleventyComputed:
+  title: "{{ subsection.title }}"
+  metaDescription: "{{ subsection.lead }}"
+---
+{% set root = page.url | rootPrefix %}
+{% set breadcrumbItems = [
+  { "label": "Главная", "href": root },
+  { "label": "Работы", "href": root ~ "work/" },
+  { "label": subsection.section.title, "href": root ~ subsection.section.href },
+  { "label": subsection.title }
+] %}
+
+<section class="section page-intro">
+  <div class="container">
+    {% include "components/breadcrumb.njk" %}
+
+    <div class="page-intro__panel">
+      <p class="page-eyebrow">{{ subsection.section.title }}</p>
+      <h1 class="page-title">{{ subsection.title }}</h1>
+      <p class="page-lead">{{ subsection.lead }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--compact">
+  <div class="container">
+    <div class="entry-grid">
+      {% for entry in subsection.entries %}
+        {% include "components/entry-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

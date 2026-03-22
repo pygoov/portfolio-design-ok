@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+title: Работы
+metaDescription: "Первый пример новой структуры портфолио: разделы и кейсы собираются из content layer."
+permalink: work/index.html
+---
+{% set root = page.url | rootPrefix %}
+
+<section class="section page-intro">
+  <div class="container">
+    <div class="page-intro__panel">
+      <p class="page-eyebrow">Work</p>
+      <h1 class="page-title">Разделы портфолио теперь собираются из данных</h1>
+      <p class="page-lead">
+        Это первый рабочий срез новой структуры: taxonomy лежит в `content/`,
+        web-ассеты лежат в `media/web/`, а страницы автоматически генерируются
+        шаблонами Eleventy.
+      </p>
+    </div>
+
+    <div class="section-grid">
+      {% for section in portfolio.sections %}
+        <a class="section-card" href="{{ root }}{{ section.href }}">
+          <p class="section-card__eyebrow">{{ section.eyebrow }}</p>
+          <h2 class="section-card__title">{{ section.title }}</h2>
+          <p class="section-card__lead">{{ section.lead }}</p>
+          <p class="section-card__meta">
+            {{ section.subsections | length }} подраздел · {{ section.entries | length }}
+            кейс
+          </p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if portfolio.featuredCase %}
+  <section class="section section--compact">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Первый пример кейса</h2>
+        <p class="section-lead">
+          Один реальный проект проходит всю новую цепочку: entry -> section ->
+          subsection -> case page.
+        </p>
+      </div>
+
+      {% set entry = portfolio.featuredCase %}
+      {% include "components/entry-card.njk" %}
+    </div>
+  </section>
+{% endif %}

@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="brand" href="{{ root }}" aria-label="На главную">
+      <span class="brand__mark">
+        <img
+          class="brand__logo"
+          src="{{ root }}assets/reference/logo.webp"
+          alt="Логотип Олеси Караульных"
+        />
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Designer Portfolio</span>
+        <span class="brand__title">Олеся Караульных</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="{{ root }}">Главная</a>
+      <a href="{{ root }}work/">Работы</a>
+      {% if portfolio.featuredCase %}
+        <a href="{{ root }}{{ portfolio.featuredCase.href }}">Кейс</a>
+      {% endif %}
+    </nav>
+  </div>
+</header>

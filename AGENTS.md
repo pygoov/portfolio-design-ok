@@ -19,13 +19,17 @@ What is already implemented:
 2. A single-page portfolio starter in `site-src/`.
 3. Build output to `docs/` for GitHub Pages.
 4. Local reference images copied into project assets.
+5. A raw portfolio intake archive in `tmp/Портфолио/`.
+6. A first-pass asset audit in `pf_map.md`.
+7. Base scaffolding for `content/`, `media/`, `site-src/_includes/`, `site-src/work/`, and `site-src/cases/`.
 
 What is not implemented yet, but is planned:
-1. Split site blocks into reusable partial templates.
-2. Separate content from template markup.
-3. AI-readable knowledge base layer.
-4. PDF source and export flow.
-5. Multi-page portfolio structure for cases, services, and profile.
+1. Wire reusable partial templates into the live site.
+2. Populate structured taxonomy and entry content files.
+3. Build multi-page `work` and `case` routes from structured content.
+4. Curate canonical media and produce web-ready asset exports.
+5. AI-readable knowledge base layer.
+6. PDF source and export flow.
 
 ## Current Stack
 - Runtime/build tool: `Node.js` + `npm`
@@ -75,27 +79,47 @@ Those extra pages and layers are planned, not implemented.
 |-- .gitignore
 |-- AGENTS.md
 |-- README.md
+|-- content/                    # scaffold for structured portfolio content
+|   |-- README.md
+|   |-- entries/
+|   `-- taxonomy/
+|-- media/                      # scaffold for curated portfolio media
+|   |-- README.md
+|   |-- source/
+|   `-- web/
 |-- package.json
 |-- package-lock.json
+|-- pf_map.md                   # first-pass asset inventory
 |-- repo-map.md
 |-- docs/                       # generated GitHub Pages output
 |   |-- index.html
 |   |-- site.css
 |   `-- assets/
 |       `-- reference/
+|-- tmp/                        # raw intake archive
+|   `-- Портфолио/
 `-- site-src/                   # canonical website source
+    |-- _includes/
+    |   |-- blocks/
+    |   |-- components/
+    |   `-- layouts/
+    |-- cases/
     |-- index.njk
     |-- site.css
+    |-- work/
     `-- assets/
         `-- reference/
 ```
 
 ## Source Of Truth Rules
-- `site-src/` is the current source of truth for the website.
+- `site-src/` is the current source of truth for the live website templates and routes.
 - `docs/` is generated output for GitHub Pages.
 - `docs/` should be treated as build output, not primary authoring source.
-- `site-src/assets/` is the current source of truth for local site media.
-- Future content layers such as `content/`, `knowledge/`, and `pdf/` do not exist yet.
+- `site-src/assets/` is the current source of truth for starter-site media already wired into the page.
+- `content/` and `media/` now exist as scaffold layers for future canonical ownership.
+- `tmp/Портфолио/` remains the raw intake layer until files are curated.
+- `pf_map.md` is the current first-pass audit of the intake archive.
+- `knowledge/` and `pdf/` do not exist yet.
 - `repo-map.md` must be updated when structure or ownership changes.
 
 ## Build Rules
@@ -127,17 +151,18 @@ When working in this repository:
 
 ## Near-Term Priorities
 The next useful steps are:
-1. Split `site-src/index.njk` into reusable partial blocks.
-2. Move copy and block data out of a single monolithic template.
-3. Continue replacing temporary placeholder structure with real portfolio content.
-4. Define the first real content model for cases, services, and profile data.
+1. Define the first taxonomy in `content/taxonomy/`.
+2. Create the first real entry files in `content/entries/`.
+3. Split `site-src/index.njk` into reusable partial blocks and layouts.
+4. Build the first `work` and `case` routes from structured content.
 
 ## Planned But Not Yet Implemented
-These paths are expected in the future but are not present yet:
-- `site-src/_includes/layouts/`
-- `site-src/_includes/blocks/`
-- `content/`
+These layers or files are still not implemented even though some scaffold paths now exist:
+- populated taxonomy files in `content/taxonomy/`
+- populated entry files in `content/entries/`
+- reusable templates wired from `site-src/_includes/`
+- real route files inside `site-src/work/` and `site-src/cases/`
 - `knowledge/`
 - `pdf/`
 
-Treat them as target architecture, not current reality.
+Treat the scaffold as infrastructure, not as finished implementation.

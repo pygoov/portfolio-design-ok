@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: portfolio.sections
+  size: 1
+  alias: section
+permalink: "work/{{ section.slug }}/index.html"
+eleventyComputed:
+  title: "{{ section.title }}"
+  metaDescription: "{{ section.lead }}"
+---
+{% set root = page.url | rootPrefix %}
+{% set breadcrumbItems = [
+  { "label": "Главная", "href": root },
+  { "label": "Работы", "href": root ~ "work/" },
+  { "label": section.title }
+] %}
+
+<section class="section page-intro">
+  <div class="container">
+    {% include "components/breadcrumb.njk" %}
+
+    <div class="page-intro__panel">
+      <p class="page-eyebrow">{{ section.eyebrow }}</p>
+      <h1 class="page-title">{{ section.title }}</h1>
+      <p class="page-lead">{{ section.lead }}</p>
+    </div>
+
+    <div class="chip-row">
+      {% for subsection in section.subsections %}
+        <a class="chip" href="{{ root }}{{ subsection.href }}">{{ subsection.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--compact">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Материалы раздела</h2>
+      <p class="section-lead">
+        Пока здесь один демонстрационный кейс, но сама страница уже собирается
+        автоматически из связей `section -> subsection -> entry`.
+      </p>
+    </div>
+
+    <div class="entry-grid">
+      {% for entry in section.entries %}
+        {% include "components/entry-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

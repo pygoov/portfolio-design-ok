@@ -1,256 +1,215 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Портфолио дизайнера Олеси Караульных: работы, направления и визуальная подача."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="site.css" />
-    <title>Олеся Караульных</title>
-  </head>
-  <body id="top">
-    <div class="page-shell">
-      <header class="site-header">
-        <div class="container site-header__row">
-          <a class="brand" href="#top" aria-label="На главную">
-            <span class="brand__mark">
-              <img
-                class="brand__logo"
-                src="assets/reference/logo-export.webp"
-                alt="Логотип Олеси Караульных"
-              />
-            </span>
-            <span class="brand__text">
-              <span class="brand__name">Designer Portfolio</span>
-              <span class="brand__title">Олеся Караульных</span>
-            </span>
+---
+layout: layouts/base.njk
+metaDescription: "Портфолио дизайнера Олеси Караульных: работы, направления и визуальная подача."
+---
+{% set root = page.url | rootPrefix %}
+
+<section class="hero">
+  <div class="container hero__panel">
+    <div>
+      <div class="hero__eyebrow">Портфолио дизайнера</div>
+      <h1 class="hero__title">
+        Привет, меня зовут Олеся. Я дизайнер, а тут мои работы.
+      </h1>
+      <p class="hero__text">
+        Сейчас сайт переходит от одной стартовой страницы к нормальной
+        структуре с разделами, подразделами и отдельными кейсами. Уже работает
+        первый полноценный пример: раздел, листинг и отдельная страница кейса.
+      </p>
+
+      <div class="button-row">
+        <a class="button button--primary" href="{{ root }}work/">
+          <span>Смотреть разделы</span>
+        </a>
+        {% if portfolio.featuredCase %}
+          <a class="button button--ghost" href="{{ root }}{{ portfolio.featuredCase.href }}">
+            Открыть кейс
           </a>
-
-          <nav class="site-nav" aria-label="Основная навигация">
-            <a href="#work">Портфолио</a>
-            <a href="#services">Специализация</a>
-            <a href="#contact">Контакты</a>
-          </nav>
-        </div>
-      </header>
-
-      <main>
-        <section class="hero">
-          <div class="container hero__panel">
-            <div>
-              <div class="hero__eyebrow">Портфолио дизайнера</div>
-              <h1 class="hero__title">
-                Привет, меня зовут Олеся. Я дизайнер, а тут мои работы.
-              </h1>
-              <p class="hero__text">
-                Тут вы можете посмотреть мои работы за 5 лет в дизайне. Я
-                многопрофильный дизайнер, но в основном здесь собраны проекты из
-                графического дизайна.
-              </p>
-            </div>
-
-            <div class="hero__visual" aria-hidden="true">
-              <div class="hero__card">
-                <h2 class="hero__card-title">Графический дизайн</h2>
-                <p class="hero__card-text">
-                  Айдентика, визуальные системы, лендинги, рекламные материалы
-                  и моушн-графика в одном портфолио.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section gallery" id="work">
-          <div class="container">
-            <h2 class="section-title">Избранные работы</h2>
-            <p class="section-lead">
-              Подборка проектов из разных направлений и форматов.
-            </p>
-
-            <div class="gallery__grid">
-              <figure class="gallery-card gallery-card--tall">
-                <img
-                  class="gallery-card__image"
-                  src="assets/reference/gallery-01.png"
-                  alt="Работа 01"
-                />
-                <figcaption class="gallery-card__caption">Работа 01</figcaption>
-              </figure>
-              <div class="gallery__stack">
-                <figure class="gallery-card">
-                  <img
-                    class="gallery-card__image"
-                    src="assets/reference/gallery-02.jpg"
-                    alt="Работа 02"
-                  />
-                  <figcaption class="gallery-card__caption">Работа 02</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                  <img
-                    class="gallery-card__image"
-                    src="assets/reference/gallery-03.jpeg"
-                    alt="Работа 03"
-                  />
-                  <figcaption class="gallery-card__caption">Работа 03</figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section projects-cta">
-          <div class="container">
-            <div class="projects-cta__panel">
-              <h2 class="projects-cta__title">Посмотреть все проекты</h2>
-              <p class="projects-cta__text">
-                Здесь собраны визуальные системы, отдельные проекты, лендинги и
-                другие работы из разных направлений дизайна.
-              </p>
-              <div class="button-row">
-                <a class="button button--primary" href="#work">
-                  <span>Смотреть работы</span>
-                  <img
-                    class="button__icon"
-                    src="assets/reference/cta-arrow.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </a>
-                <a class="button button--ghost" href="#services">Мои направления</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section capabilities" id="services">
-          <div class="container">
-            <h2 class="section-title">Так что я могу?</h2>
-            <p class="section-lead">
-              Ключевые направления, с которыми я работаю.
-            </p>
-
-            <div class="capabilities__grid">
-              <article class="capability-card">
-                <div class="capability-card__badge">
-                  <img
-                    class="capability-card__icon"
-                    src="assets/reference/icon-analytics.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3 class="capability-card__title">Аналитика</h3>
-                <p class="capability-card__text">
-                  Я могу оценить возможности вашей компании, понять текущее
-                  положение, проанализировать транспортную доступность и
-                  пешеходный трафик.
-                </p>
-              </article>
-
-              <article class="capability-card">
-                <div class="capability-card__badge">
-                  <img
-                    class="capability-card__icon"
-                    src="assets/reference/icon-marketing.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3 class="capability-card__title">Маркетинг</h3>
-                <p class="capability-card__text">
-                  Я помогаю сформулировать основную концепцию бренда под задачи
-                  компании и выстроить стратегию конкурентного преимущества.
-                </p>
-              </article>
-
-              <article class="capability-card">
-                <div class="capability-card__badge">
-                  <img
-                    class="capability-card__icon"
-                    src="assets/reference/icon-concepts.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3 class="capability-card__title">Концепции</h3>
-                <p class="capability-card__text">
-                  Я разрабатываю стратегию, концепцию и идеологию проекта и
-                  предлагаю идеи для его дальнейшего развития.
-                </p>
-              </article>
-
-              <article class="capability-card">
-                <div class="capability-card__badge">
-                  <img
-                    class="capability-card__icon"
-                    src="assets/reference/icon-branding.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3 class="capability-card__title">Брендинг</h3>
-                <p class="capability-card__text">
-                  Я помогаю стартапам создать визуальную идентичность на основе
-                  маркетингового исследования и позиционирования.
-                </p>
-              </article>
-
-              <article class="capability-card">
-                <div class="capability-card__badge">
-                  <img
-                    class="capability-card__icon"
-                    src="assets/reference/icon-motion.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3 class="capability-card__title">Моушн</h3>
-                <p class="capability-card__text">
-                  Я создаю анимированные key visuals для молодых брендов,
-                  рекламные промо-ролики и визуальные инсталляции.
-                </p>
-              </article>
-
-              <article class="capability-card">
-                <div class="capability-card__badge">
-                  <img
-                    class="capability-card__icon"
-                    src="assets/reference/icon-landing-pages.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3 class="capability-card__title">Лендинги</h3>
-                <p class="capability-card__text">
-                  Я проектирую лендинги с ясной структурой, выразительной
-                  подачей и акцентом на ключевое предложение.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer" id="contact">
-        <div class="container">
-          <div class="site-footer__panel">
-            <p class="site-footer__text">
-              Что-то упустили? Или не нашли? Всегда можно вернуться и посмотреть
-              ещё раз.
-            </p>
-            <a class="site-footer__top" href="#top">Наверх</a>
-          </div>
-        </div>
-      </footer>
+        {% endif %}
+      </div>
     </div>
-  </body>
-</html>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__card">
+        <h2 class="hero__card-title">
+          {% if portfolio.featuredCase %}
+            {{ portfolio.featuredCase.title }}
+          {% else %}
+            Графический дизайн
+          {% endif %}
+        </h2>
+        <p class="hero__card-text">
+          {% if portfolio.featuredCase %}
+            {{ portfolio.featuredCase.summary }}
+          {% else %}
+            Айдентика, визуальные системы, лендинги, рекламные материалы и
+            моушн-графика в одном портфолио.
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--compact">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Разделы портфолио</h2>
+      <p class="section-lead">
+        Главная теперь ведет не на якоря внутри одной страницы, а в реальную
+        структуру сайта. Ниже пока показан первый живой раздел из новой модели.
+      </p>
+    </div>
+
+    <div class="section-grid">
+      {% for section in portfolio.sections %}
+        <a class="section-card" href="{{ root }}{{ section.href }}">
+          <p class="section-card__eyebrow">{{ section.eyebrow }}</p>
+          <h2 class="section-card__title">{{ section.title }}</h2>
+          <p class="section-card__lead">{{ section.lead }}</p>
+          <p class="section-card__meta">
+            {{ section.subsections | length }} подраздел · {{ section.entries | length }}
+            кейс
+          </p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if portfolio.featuredCase %}
+  <section class="section section--compact">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Первый полноценный кейс</h2>
+        <p class="section-lead">
+          Один проект уже проходит всю новую цепочку: curated media, content
+          entry, section listing и отдельная case page.
+        </p>
+      </div>
+
+      {% set entry = portfolio.featuredCase %}
+      {% include "components/entry-card.njk" %}
+    </div>
+  </section>
+{% endif %}
+
+<section class="section gallery">
+  <div class="container">
+    <h2 class="section-title">Стартовая витрина</h2>
+    <p class="section-lead">
+      Эта часть пока сохраняет формат стартовой страницы и служит визуальным
+      входом в портфолио, пока новые кейсы поэтапно переносятся в content layer.
+    </p>
+
+    <div class="gallery__grid">
+      <figure class="gallery-card gallery-card--tall">
+        <img
+          class="gallery-card__image"
+          src="{{ root }}assets/reference/gallery-01.png"
+          alt="Избранная работа 01"
+        />
+        <figcaption class="gallery-card__caption">Избранная работа 01</figcaption>
+      </figure>
+      <div class="gallery__stack">
+        <figure class="gallery-card">
+          <img
+            class="gallery-card__image"
+            src="{{ root }}assets/reference/gallery-02.jpg"
+            alt="Избранная работа 02"
+          />
+          <figcaption class="gallery-card__caption">Избранная работа 02</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img
+            class="gallery-card__image"
+            src="{{ root }}assets/reference/gallery-03.jpeg"
+            alt="Избранная работа 03"
+          />
+          <figcaption class="gallery-card__caption">Избранная работа 03</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section projects-cta">
+  <div class="container">
+    <div class="projects-cta__panel">
+      <h2 class="projects-cta__title">Открыть многослойную структуру сайта</h2>
+      <p class="projects-cta__text">
+        Новый слой уже умеет собирать разделы и кейсы из отдельных данных и
+        web-ready медиа. Следующий шаг — расширить эту структуру на остальные
+        реальные работы.
+      </p>
+      <div class="button-row">
+        <a class="button button--primary" href="{{ root }}work/">
+          <span>Открыть все разделы</span>
+        </a>
+        <a class="button button--ghost" href="{{ root }}work/grafika/marketplaces/">
+          Маркетплейсы
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section capabilities">
+  <div class="container">
+    <h2 class="section-title">Как сейчас устроен переход</h2>
+    <p class="section-lead">
+      Главная уже работает как входная страница для новой системы и показывает,
+      как дальше будут подключаться разделы, кейсы и медиа.
+    </p>
+
+    <div class="capabilities__grid">
+      <article class="capability-card">
+        <div class="capability-card__badge">
+          <img
+            class="capability-card__icon"
+            src="{{ root }}assets/reference/icon-analytics.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+        <h3 class="capability-card__title">Content layer</h3>
+        <p class="capability-card__text">
+          Разделы, подразделы и кейсы больше не должны жить в одном монолитном
+          шаблоне. Они описываются отдельно и затем собираются в страницы.
+        </p>
+      </article>
+
+      <article class="capability-card">
+        <div class="capability-card__badge">
+          <img
+            class="capability-card__icon"
+            src="{{ root }}assets/reference/icon-marketing.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+        <h3 class="capability-card__title">Curated media</h3>
+        <p class="capability-card__text">
+          Для сайта используются не случайные файлы из intake-архива, а
+          подготовленные web-ready ассеты, которые копируются в итоговый build.
+        </p>
+      </article>
+
+      <article class="capability-card">
+        <div class="capability-card__badge">
+          <img
+            class="capability-card__icon"
+            src="{{ root }}assets/reference/icon-concepts.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+        <h3 class="capability-card__title">Case routes</h3>
+        <p class="capability-card__text">
+          Большие проекты получают свою страницу кейса, а мелкие работы остаются
+          в листингах. Это позволяет не смешивать крупные бренды в одну витрину.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>

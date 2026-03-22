@@ -1,0 +1,78 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: portfolio.caseEntries
+  size: 1
+  alias: entry
+permalink: "cases/{{ entry.slug }}/index.html"
+eleventyComputed:
+  title: "{{ entry.title }}"
+  metaDescription: "{{ entry.summary }}"
+---
+{% set root = page.url | rootPrefix %}
+{% set breadcrumbItems = [
+  { "label": "Главная", "href": root },
+  { "label": "Работы", "href": root ~ "work/" },
+  { "label": entry.primarySection.title, "href": root ~ entry.primarySection.href },
+  { "label": entry.primarySubsection.title, "href": root ~ entry.primarySubsection.href },
+  { "label": entry.title }
+] %}
+
+<section class="section page-intro page-intro--case">
+  <div class="container">
+    {% include "components/breadcrumb.njk" %}
+
+    <div class="case-hero">
+      <div class="case-hero__copy">
+        <p class="page-eyebrow">{{ entry.client }} · {{ entry.year }}</p>
+        <h1 class="page-title">{{ entry.title }}</h1>
+        <p class="page-lead">{{ entry.summary }}</p>
+
+        <div class="chip-row">
+          {% for item in entry.deliverables %}
+            <span class="chip chip--static">{{ item }}</span>
+          {% endfor %}
+        </div>
+
+        <div class="case-copy">
+          {% for paragraph in entry.description %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <figure class="case-cover">
+        <img
+          src="{{ root }}{{ entry.coverUrl }}"
+          alt="{{ entry.assets[0].alt }}"
+          loading="eager"
+        />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--compact">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Слайды кейса</h2>
+      <p class="section-lead">
+        В этом примере кейс собирает web-ассеты из `media/web/entries/pinque/`,
+        а сами пути в шаблоне не захардкожены по файлам страницы.
+      </p>
+    </div>
+
+    <div class="asset-grid">
+      {% for asset in entry.assets %}
+        <figure class="asset-card">
+          <img
+            src="{{ root }}{{ asset.url }}"
+            alt="{{ asset.alt }}"
+            loading="{{ 'eager' if loop.first else 'lazy' }}"
+          />
+          <figcaption class="asset-card__caption">{{ asset.caption }}</figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
