@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-design-ok",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Designer portfolio site built with Eleventy and published via GitHub Pages",
+  "scripts": {
+    "dev": "eleventy --serve --input=site-src --output=docs",
+    "build": "eleventy --input=site-src --output=docs"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+
+# Eleventy and local build caches
+.11ty-cache/
+.cache/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+site-reference
