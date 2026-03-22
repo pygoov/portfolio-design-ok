@@ -1,0 +1,45 @@
+{
+  "id": "ads-reklama",
+  "slug": "ads-reklama",
+  "title": "Реклама",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "ads"
+  ],
+  "summary": "Подборка рекламных материалов для проекта Реклама.",
+  "deliverables": [
+    "Рекламные визуалы",
+    "Промо-материалы"
+  ],
+  "description": [
+    "Подборка рекламных материалов для проекта Реклама."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Реклама ",
+  "cover": "entries/ads-reklama/cover.webp",
+  "assets": [
+    {
+      "src": "entries/ads-reklama/cover.webp",
+      "alt": "Реклама — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/ads-reklama/asset-02.webp",
+      "alt": "Реклама — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/ads-reklama/asset-03.webp",
+      "alt": "Реклама — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/ads-reklama/asset-04.webp",
+      "alt": "Реклама — изображение 04",
+      "caption": "Кадр 04"
+    }
+  ]
+}

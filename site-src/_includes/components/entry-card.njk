@@ -9,7 +9,17 @@
   </a>
 
   <div class="entry-card__body">
-    <p class="entry-card__eyebrow">{{ entry.client }} · {{ entry.year }}</p>
+    <p class="entry-card__eyebrow">
+      {% if entry.client and entry.year %}
+        {{ entry.client }} · {{ entry.year }}
+      {% elif entry.client %}
+        {{ entry.client }}
+      {% elif entry.year %}
+        {{ entry.year }}
+      {% else %}
+        {{ entry.primarySubsection.title if entry.primarySubsection else "Проект" }}
+      {% endif %}
+    </p>
     <h3 class="entry-card__title">
       <a href="{{ root }}{{ entry.href }}">{{ entry.title }}</a>
     </h3>

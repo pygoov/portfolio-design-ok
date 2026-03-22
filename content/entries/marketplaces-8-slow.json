@@ -1,0 +1,82 @@
+{
+  "id": "marketplaces-8-slow",
+  "slug": "marketplaces-8-slow",
+  "title": "8 SLOW",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "marketplaces"
+  ],
+  "summary": "Подборка карточек маркетплейса для проекта 8 SLOW.",
+  "deliverables": [
+    "Обложки карточек",
+    "Слайды с офферами",
+    "Серия для витрины"
+  ],
+  "description": [
+    "Подборка карточек маркетплейса для проекта 8 SLOW."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Карточки ВБ, ОЗОН/Бренд 8 SLOW",
+  "cover": "entries/marketplaces-8-slow/cover.webp",
+  "assets": [
+    {
+      "src": "entries/marketplaces-8-slow/cover.webp",
+      "alt": "8 SLOW — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-02.webp",
+      "alt": "8 SLOW — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-03.webp",
+      "alt": "8 SLOW — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-04.webp",
+      "alt": "8 SLOW — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-05.webp",
+      "alt": "8 SLOW — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-06.webp",
+      "alt": "8 SLOW — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-07.webp",
+      "alt": "8 SLOW — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-08.webp",
+      "alt": "8 SLOW — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-09.webp",
+      "alt": "8 SLOW — изображение 09",
+      "caption": "Кадр 09"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-10.webp",
+      "alt": "8 SLOW — изображение 10",
+      "caption": "Кадр 10"
+    },
+    {
+      "src": "entries/marketplaces-8-slow/asset-11.webp",
+      "alt": "8 SLOW — изображение 11",
+      "caption": "Кадр 11"
+    }
+  ],
+  "client": "8 SLOW"
+}

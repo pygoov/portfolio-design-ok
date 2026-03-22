@@ -1,0 +1,41 @@
+{
+  "id": "visualizations-rzhd-stolovaya",
+  "slug": "visualizations-rzhd-stolovaya",
+  "title": "РЖД столовая",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД столовая.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД столовая."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД столовая",
+  "cover": "entries/visualizations-rzhd-stolovaya/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-stolovaya/cover.webp",
+      "alt": "РЖД столовая — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-stolovaya/asset-02.webp",
+      "alt": "РЖД столовая — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/visualizations-rzhd-stolovaya/asset-03.webp",
+      "alt": "РЖД столовая — изображение 03",
+      "caption": "Кадр 03"
+    }
+  ],
+  "client": "РЖД"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "print-layouts-reklamnye-makety",
+  "slug": "print-layouts-reklamnye-makety",
+  "title": "Рекламные макеты",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "print-layouts"
+  ],
+  "summary": "Подборка рекламных макетов для проекта Рекламные макеты.",
+  "deliverables": [
+    "Рекламные макеты",
+    "Печатные материалы"
+  ],
+  "description": [
+    "Подборка рекламных макетов для проекта Рекламные макеты."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Рекламные макеты",
+  "cover": "entries/print-layouts-reklamnye-makety/cover.webp",
+  "assets": [
+    {
+      "src": "entries/print-layouts-reklamnye-makety/cover.webp",
+      "alt": "Рекламные макеты — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-02.webp",
+      "alt": "Рекламные макеты — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-03.webp",
+      "alt": "Рекламные макеты — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-04.webp",
+      "alt": "Рекламные макеты — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-05.webp",
+      "alt": "Рекламные макеты — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-06.webp",
+      "alt": "Рекламные макеты — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-07.webp",
+      "alt": "Рекламные макеты — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-08.webp",
+      "alt": "Рекламные макеты — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-09.webp",
+      "alt": "Рекламные макеты — изображение 09",
+      "caption": "Кадр 09"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-10.webp",
+      "alt": "Рекламные макеты — изображение 10",
+      "caption": "Кадр 10"
+    },
+    {
+      "src": "entries/print-layouts-reklamnye-makety/asset-11.webp",
+      "alt": "Рекламные макеты — изображение 11",
+      "caption": "Кадр 11"
+    }
+  ]
+}

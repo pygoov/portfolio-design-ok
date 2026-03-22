@@ -87,20 +87,29 @@ module.exports = function () {
     section: sectionById[subsection.sectionId],
   }));
 
-  entries.forEach((entry) => {
+  const visibleEntryIds = new Set();
+
+  normalizedSubsectionPages.forEach((subsection) => {
+    subsection.entries.forEach((entry) => {
+      visibleEntryIds.add(entry.id);
+    });
+  });
+
+  const visibleEntries = entries.filter((entry) => visibleEntryIds.has(entry.id));
+
+  visibleEntries.forEach((entry) => {
     entry.primarySection = sectionById[entry.sections[0]];
     entry.primarySubsection = normalizedSubsectionPages.find(
       (subsection) => subsection.id === entry.subsections[0],
     );
   });
 
-  const caseEntries = entries.filter((entry) => entry.hasPage);
+  const caseEntries = visibleEntries.filter((entry) => entry.hasPage);
 
   return {
     sections: sectionPages,
     subsections: normalizedSubsectionPages,
-    entries,
+    entries: visibleEntries,
     caseEntries,
-    featuredCase: caseEntries[0] || null,
   };
 };

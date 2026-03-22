@@ -1,0 +1,70 @@
+{
+  "id": "mockups-mokapy",
+  "slug": "mockups-mokapy",
+  "title": "Мокапы",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "mockups"
+  ],
+  "summary": "Подборка мокапов и презентационных визуалов для проекта Мокапы.",
+  "deliverables": [
+    "Мокапы",
+    "Презентационные визуалы"
+  ],
+  "description": [
+    "Подборка мокапов и презентационных визуалов для проекта Мокапы."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Мокапы",
+  "cover": "entries/mockups-mokapy/cover.webp",
+  "assets": [
+    {
+      "src": "entries/mockups-mokapy/cover.webp",
+      "alt": "Мокапы — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-02.webp",
+      "alt": "Мокапы — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-03.webp",
+      "alt": "Мокапы — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-04.webp",
+      "alt": "Мокапы — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-05.webp",
+      "alt": "Мокапы — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-06.webp",
+      "alt": "Мокапы — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-07.webp",
+      "alt": "Мокапы — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-08.webp",
+      "alt": "Мокапы — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/mockups-mokapy/asset-09.webp",
+      "alt": "Мокапы — изображение 09",
+      "caption": "Кадр 09"
+    }
+  ]
+}

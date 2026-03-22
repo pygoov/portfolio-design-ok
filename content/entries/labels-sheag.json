@@ -1,0 +1,76 @@
+{
+  "id": "labels-sheag",
+  "slug": "labels-sheag",
+  "title": "SHEAG",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "labels"
+  ],
+  "summary": "Подборка макетов этикеток для проекта SHEAG.",
+  "deliverables": [
+    "Этикетки",
+    "Упаковочные носители"
+  ],
+  "description": [
+    "Подборка макетов этикеток для проекта SHEAG."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Макеты этикекток/SHEAG",
+  "cover": "entries/labels-sheag/cover.webp",
+  "assets": [
+    {
+      "src": "entries/labels-sheag/cover.webp",
+      "alt": "SHEAG — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/labels-sheag/asset-02.webp",
+      "alt": "SHEAG — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/labels-sheag/asset-03.webp",
+      "alt": "SHEAG — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/labels-sheag/asset-04.webp",
+      "alt": "SHEAG — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/labels-sheag/asset-05.webp",
+      "alt": "SHEAG — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/labels-sheag/asset-06.webp",
+      "alt": "SHEAG — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/labels-sheag/asset-07.webp",
+      "alt": "SHEAG — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/labels-sheag/asset-08.webp",
+      "alt": "SHEAG — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/labels-sheag/asset-09.webp",
+      "alt": "SHEAG — изображение 09",
+      "caption": "Кадр 09"
+    },
+    {
+      "src": "entries/labels-sheag/asset-10.webp",
+      "alt": "SHEAG — изображение 10",
+      "caption": "Кадр 10"
+    }
+  ],
+  "client": "SHEAG"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "marketplaces-martin",
+  "slug": "marketplaces-martin",
+  "title": "Мартин",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "marketplaces"
+  ],
+  "summary": "Подборка карточек маркетплейса для проекта Мартин.",
+  "deliverables": [
+    "Обложки карточек",
+    "Слайды с офферами",
+    "Серия для витрины"
+  ],
+  "description": [
+    "Подборка карточек маркетплейса для проекта Мартин."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Карточки ВБ, ОЗОН/Мартин",
+  "cover": "entries/marketplaces-martin/cover.webp",
+  "assets": [
+    {
+      "src": "entries/marketplaces-martin/cover.webp",
+      "alt": "Мартин — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-02.webp",
+      "alt": "Мартин — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-03.webp",
+      "alt": "Мартин — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-04.webp",
+      "alt": "Мартин — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-05.webp",
+      "alt": "Мартин — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-06.webp",
+      "alt": "Мартин — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-07.webp",
+      "alt": "Мартин — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-08.webp",
+      "alt": "Мартин — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-09.webp",
+      "alt": "Мартин — изображение 09",
+      "caption": "Кадр 09"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-10.webp",
+      "alt": "Мартин — изображение 10",
+      "caption": "Кадр 10"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-11.webp",
+      "alt": "Мартин — изображение 11",
+      "caption": "Кадр 11"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-12.webp",
+      "alt": "Мартин — изображение 12",
+      "caption": "Кадр 12"
+    },
+    {
+      "src": "entries/marketplaces-martin/asset-13.webp",
+      "alt": "Мартин — изображение 13",
+      "caption": "Кадр 13"
+    }
+  ],
+  "client": "Мартин"
+}

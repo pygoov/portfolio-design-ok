@@ -24,20 +24,39 @@ eleventyComputed:
 
     <div class="case-hero">
       <div class="case-hero__copy">
-        <p class="page-eyebrow">{{ entry.client }} · {{ entry.year }}</p>
+        <p class="page-eyebrow">
+          {% if entry.client and entry.year %}
+            {{ entry.client }} · {{ entry.year }}
+          {% elif entry.client %}
+            {{ entry.client }}
+          {% elif entry.year %}
+            {{ entry.year }}
+          {% else %}
+            {{ entry.primarySubsection.title }}
+          {% endif %}
+        </p>
         <h1 class="page-title">{{ entry.title }}</h1>
         <p class="page-lead">{{ entry.summary }}</p>
 
-        <div class="chip-row">
-          {% for item in entry.deliverables %}
-            <span class="chip chip--static">{{ item }}</span>
-          {% endfor %}
-        </div>
+        {% if entry.deliverables and entry.deliverables.length %}
+          <div class="chip-row">
+            {% for item in entry.deliverables %}
+              <span class="chip chip--static">{{ item }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
 
         <div class="case-copy">
-          {% for paragraph in entry.description %}
-            <p>{{ paragraph }}</p>
-          {% endfor %}
+          {% if entry.description and entry.description.length %}
+            {% for paragraph in entry.description %}
+              <p>{{ paragraph }}</p>
+            {% endfor %}
+          {% else %}
+            <p>
+              Проект автоматически собран из structured entry и подготовленных
+              web-ассетов.
+            </p>
+          {% endif %}
         </div>
       </div>
 
@@ -55,10 +74,10 @@ eleventyComputed:
 <section class="section section--compact">
   <div class="container">
     <div class="section-head">
-      <h2 class="section-title">Слайды кейса</h2>
+      <h2 class="section-title">Галерея проекта</h2>
       <p class="section-lead">
-        В этом примере кейс собирает web-ассеты из `media/web/entries/pinque/`,
-        а сами пути в шаблоне не захардкожены по файлам страницы.
+        Изображения на этой странице приходят из `media/web/`, а не из
+        временного intake-архива.
       </p>
     </div>
 

@@ -1,0 +1,36 @@
+{
+  "id": "visualizations-rzhd-zdanie-dushevyh-plany",
+  "slug": "visualizations-rzhd-zdanie-dushevyh-plany",
+  "title": "РЖД здание душевых — планы",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД здание душевых — планы.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД здание душевых — планы."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД здание душевых/планы",
+  "cover": "entries/visualizations-rzhd-zdanie-dushevyh-plany/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-zdanie-dushevyh-plany/cover.webp",
+      "alt": "РЖД здание душевых — планы — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-zdanie-dushevyh-plany/asset-02.webp",
+      "alt": "РЖД здание душевых — планы — изображение 02",
+      "caption": "Кадр 02"
+    }
+  ],
+  "client": "РЖД"
+}

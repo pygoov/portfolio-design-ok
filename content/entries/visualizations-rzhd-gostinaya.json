@@ -1,0 +1,41 @@
+{
+  "id": "visualizations-rzhd-gostinaya",
+  "slug": "visualizations-rzhd-gostinaya",
+  "title": "РЖД гостиная",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД гостиная.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД гостиная."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД гостиная",
+  "cover": "entries/visualizations-rzhd-gostinaya/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-gostinaya/cover.webp",
+      "alt": "РЖД гостиная — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-gostinaya/asset-02.webp",
+      "alt": "РЖД гостиная — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/visualizations-rzhd-gostinaya/asset-03.webp",
+      "alt": "РЖД гостиная — изображение 03",
+      "caption": "Кадр 03"
+    }
+  ],
+  "client": "РЖД"
+}

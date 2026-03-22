@@ -1,0 +1,41 @@
+{
+  "id": "labels-mod",
+  "slug": "labels-mod",
+  "title": "MOD",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "labels"
+  ],
+  "summary": "Подборка макетов этикеток для проекта MOD.",
+  "deliverables": [
+    "Этикетки",
+    "Упаковочные носители"
+  ],
+  "description": [
+    "Подборка макетов этикеток для проекта MOD."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Макеты этикекток/MOD",
+  "cover": "entries/labels-mod/cover.webp",
+  "assets": [
+    {
+      "src": "entries/labels-mod/cover.webp",
+      "alt": "MOD — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/labels-mod/asset-02.webp",
+      "alt": "MOD — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/labels-mod/asset-03.webp",
+      "alt": "MOD — изображение 03",
+      "caption": "Кадр 03"
+    }
+  ],
+  "client": "MOD"
+}

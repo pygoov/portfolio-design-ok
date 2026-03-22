@@ -1,0 +1,46 @@
+{
+  "id": "visualizations-rzhd-kabinet-n31",
+  "slug": "visualizations-rzhd-kabinet-n31",
+  "title": "РЖД кабинет №31",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД кабинет №31.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД кабинет №31."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД кабинет №31",
+  "cover": "entries/visualizations-rzhd-kabinet-n31/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n31/cover.webp",
+      "alt": "РЖД кабинет №31 — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n31/asset-02.webp",
+      "alt": "РЖД кабинет №31 — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n31/asset-03.webp",
+      "alt": "РЖД кабинет №31 — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n31/asset-04.webp",
+      "alt": "РЖД кабинет №31 — изображение 04",
+      "caption": "Кадр 04"
+    }
+  ],
+  "client": "РЖД"
+}

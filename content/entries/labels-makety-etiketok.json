@@ -1,0 +1,330 @@
+{
+  "id": "labels-makety-etiketok",
+  "slug": "labels-makety-etiketok",
+  "title": "Макеты этикеток",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "labels"
+  ],
+  "summary": "Подборка макетов этикеток для проекта Макеты этикеток.",
+  "deliverables": [
+    "Этикетки",
+    "Упаковочные носители"
+  ],
+  "description": [
+    "Подборка макетов этикеток для проекта Макеты этикеток."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Макеты этикекток",
+  "cover": "entries/labels-makety-etiketok/cover.webp",
+  "assets": [
+    {
+      "src": "entries/labels-makety-etiketok/cover.webp",
+      "alt": "Макеты этикеток — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-02.webp",
+      "alt": "Макеты этикеток — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-03.webp",
+      "alt": "Макеты этикеток — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-04.webp",
+      "alt": "Макеты этикеток — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-05.webp",
+      "alt": "Макеты этикеток — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-06.webp",
+      "alt": "Макеты этикеток — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-07.webp",
+      "alt": "Макеты этикеток — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-08.webp",
+      "alt": "Макеты этикеток — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-09.webp",
+      "alt": "Макеты этикеток — изображение 09",
+      "caption": "Кадр 09"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-10.webp",
+      "alt": "Макеты этикеток — изображение 10",
+      "caption": "Кадр 10"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-11.webp",
+      "alt": "Макеты этикеток — изображение 11",
+      "caption": "Кадр 11"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-12.webp",
+      "alt": "Макеты этикеток — изображение 12",
+      "caption": "Кадр 12"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-13.webp",
+      "alt": "Макеты этикеток — изображение 13",
+      "caption": "Кадр 13"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-14.webp",
+      "alt": "Макеты этикеток — изображение 14",
+      "caption": "Кадр 14"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-15.webp",
+      "alt": "Макеты этикеток — изображение 15",
+      "caption": "Кадр 15"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-16.webp",
+      "alt": "Макеты этикеток — изображение 16",
+      "caption": "Кадр 16"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-17.webp",
+      "alt": "Макеты этикеток — изображение 17",
+      "caption": "Кадр 17"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-18.webp",
+      "alt": "Макеты этикеток — изображение 18",
+      "caption": "Кадр 18"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-19.webp",
+      "alt": "Макеты этикеток — изображение 19",
+      "caption": "Кадр 19"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-20.webp",
+      "alt": "Макеты этикеток — изображение 20",
+      "caption": "Кадр 20"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-21.webp",
+      "alt": "Макеты этикеток — изображение 21",
+      "caption": "Кадр 21"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-22.webp",
+      "alt": "Макеты этикеток — изображение 22",
+      "caption": "Кадр 22"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-23.webp",
+      "alt": "Макеты этикеток — изображение 23",
+      "caption": "Кадр 23"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-24.webp",
+      "alt": "Макеты этикеток — изображение 24",
+      "caption": "Кадр 24"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-25.webp",
+      "alt": "Макеты этикеток — изображение 25",
+      "caption": "Кадр 25"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-26.webp",
+      "alt": "Макеты этикеток — изображение 26",
+      "caption": "Кадр 26"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-27.webp",
+      "alt": "Макеты этикеток — изображение 27",
+      "caption": "Кадр 27"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-28.webp",
+      "alt": "Макеты этикеток — изображение 28",
+      "caption": "Кадр 28"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-29.webp",
+      "alt": "Макеты этикеток — изображение 29",
+      "caption": "Кадр 29"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-30.webp",
+      "alt": "Макеты этикеток — изображение 30",
+      "caption": "Кадр 30"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-31.webp",
+      "alt": "Макеты этикеток — изображение 31",
+      "caption": "Кадр 31"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-32.webp",
+      "alt": "Макеты этикеток — изображение 32",
+      "caption": "Кадр 32"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-33.webp",
+      "alt": "Макеты этикеток — изображение 33",
+      "caption": "Кадр 33"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-34.webp",
+      "alt": "Макеты этикеток — изображение 34",
+      "caption": "Кадр 34"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-35.webp",
+      "alt": "Макеты этикеток — изображение 35",
+      "caption": "Кадр 35"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-36.webp",
+      "alt": "Макеты этикеток — изображение 36",
+      "caption": "Кадр 36"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-37.webp",
+      "alt": "Макеты этикеток — изображение 37",
+      "caption": "Кадр 37"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-38.webp",
+      "alt": "Макеты этикеток — изображение 38",
+      "caption": "Кадр 38"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-39.webp",
+      "alt": "Макеты этикеток — изображение 39",
+      "caption": "Кадр 39"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-40.webp",
+      "alt": "Макеты этикеток — изображение 40",
+      "caption": "Кадр 40"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-41.webp",
+      "alt": "Макеты этикеток — изображение 41",
+      "caption": "Кадр 41"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-42.webp",
+      "alt": "Макеты этикеток — изображение 42",
+      "caption": "Кадр 42"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-43.webp",
+      "alt": "Макеты этикеток — изображение 43",
+      "caption": "Кадр 43"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-44.webp",
+      "alt": "Макеты этикеток — изображение 44",
+      "caption": "Кадр 44"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-45.webp",
+      "alt": "Макеты этикеток — изображение 45",
+      "caption": "Кадр 45"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-46.webp",
+      "alt": "Макеты этикеток — изображение 46",
+      "caption": "Кадр 46"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-47.webp",
+      "alt": "Макеты этикеток — изображение 47",
+      "caption": "Кадр 47"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-48.webp",
+      "alt": "Макеты этикеток — изображение 48",
+      "caption": "Кадр 48"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-49.webp",
+      "alt": "Макеты этикеток — изображение 49",
+      "caption": "Кадр 49"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-50.webp",
+      "alt": "Макеты этикеток — изображение 50",
+      "caption": "Кадр 50"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-51.webp",
+      "alt": "Макеты этикеток — изображение 51",
+      "caption": "Кадр 51"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-52.webp",
+      "alt": "Макеты этикеток — изображение 52",
+      "caption": "Кадр 52"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-53.webp",
+      "alt": "Макеты этикеток — изображение 53",
+      "caption": "Кадр 53"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-54.webp",
+      "alt": "Макеты этикеток — изображение 54",
+      "caption": "Кадр 54"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-55.webp",
+      "alt": "Макеты этикеток — изображение 55",
+      "caption": "Кадр 55"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-56.webp",
+      "alt": "Макеты этикеток — изображение 56",
+      "caption": "Кадр 56"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-57.webp",
+      "alt": "Макеты этикеток — изображение 57",
+      "caption": "Кадр 57"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-58.webp",
+      "alt": "Макеты этикеток — изображение 58",
+      "caption": "Кадр 58"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-59.webp",
+      "alt": "Макеты этикеток — изображение 59",
+      "caption": "Кадр 59"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-60.webp",
+      "alt": "Макеты этикеток — изображение 60",
+      "caption": "Кадр 60"
+    },
+    {
+      "src": "entries/labels-makety-etiketok/asset-61.webp",
+      "alt": "Макеты этикеток — изображение 61",
+      "caption": "Кадр 61"
+    }
+  ]
+}

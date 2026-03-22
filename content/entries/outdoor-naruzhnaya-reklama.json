@@ -1,0 +1,45 @@
+{
+  "id": "outdoor-naruzhnaya-reklama",
+  "slug": "outdoor-naruzhnaya-reklama",
+  "title": "Наружная реклама",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "outdoor"
+  ],
+  "summary": "Подборка материалов наружной рекламы для проекта Наружная реклама.",
+  "deliverables": [
+    "Наружная реклама",
+    "Промо-носители"
+  ],
+  "description": [
+    "Подборка материалов наружной рекламы для проекта Наружная реклама."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Наружная реклама",
+  "cover": "entries/outdoor-naruzhnaya-reklama/cover.webp",
+  "assets": [
+    {
+      "src": "entries/outdoor-naruzhnaya-reklama/cover.webp",
+      "alt": "Наружная реклама — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/outdoor-naruzhnaya-reklama/asset-02.webp",
+      "alt": "Наружная реклама — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/outdoor-naruzhnaya-reklama/asset-03.webp",
+      "alt": "Наружная реклама — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/outdoor-naruzhnaya-reklama/asset-04.webp",
+      "alt": "Наружная реклама — изображение 04",
+      "caption": "Кадр 04"
+    }
+  ]
+}

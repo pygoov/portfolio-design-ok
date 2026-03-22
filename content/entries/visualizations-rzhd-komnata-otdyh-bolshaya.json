@@ -1,0 +1,51 @@
+{
+  "id": "visualizations-rzhd-komnata-otdyh-bolshaya",
+  "slug": "visualizations-rzhd-komnata-otdyh-bolshaya",
+  "title": "РЖД комната отдых большая",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД комната отдых большая.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД комната отдых большая."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД комната отдых большая",
+  "cover": "entries/visualizations-rzhd-komnata-otdyh-bolshaya/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-komnata-otdyh-bolshaya/cover.webp",
+      "alt": "РЖД комната отдых большая — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-komnata-otdyh-bolshaya/asset-02.webp",
+      "alt": "РЖД комната отдых большая — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/visualizations-rzhd-komnata-otdyh-bolshaya/asset-03.webp",
+      "alt": "РЖД комната отдых большая — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/visualizations-rzhd-komnata-otdyh-bolshaya/asset-04.webp",
+      "alt": "РЖД комната отдых большая — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/visualizations-rzhd-komnata-otdyh-bolshaya/asset-05.webp",
+      "alt": "РЖД комната отдых большая — изображение 05",
+      "caption": "Кадр 05"
+    }
+  ],
+  "client": "РЖД"
+}

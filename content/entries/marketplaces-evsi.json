@@ -1,0 +1,42 @@
+{
+  "id": "marketplaces-evsi",
+  "slug": "marketplaces-evsi",
+  "title": "evsi",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "marketplaces"
+  ],
+  "summary": "Подборка карточек маркетплейса для проекта evsi.",
+  "deliverables": [
+    "Обложки карточек",
+    "Слайды с офферами",
+    "Серия для витрины"
+  ],
+  "description": [
+    "Подборка карточек маркетплейса для проекта evsi."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Карточки ВБ, ОЗОН/Бренд evsi",
+  "cover": "entries/marketplaces-evsi/cover.webp",
+  "assets": [
+    {
+      "src": "entries/marketplaces-evsi/cover.webp",
+      "alt": "evsi — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/marketplaces-evsi/asset-02.webp",
+      "alt": "evsi — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/marketplaces-evsi/asset-03.webp",
+      "alt": "evsi — изображение 03",
+      "caption": "Кадр 03"
+    }
+  ],
+  "client": "evsi"
+}

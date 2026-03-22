@@ -1,0 +1,61 @@
+{
+  "id": "logos-logotipy",
+  "slug": "logos-logotipy",
+  "title": "Логотипы",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "logos"
+  ],
+  "summary": "Подборка логотипов и знаков для проекта Логотипы.",
+  "deliverables": [
+    "Логотипы",
+    "Знаки",
+    "Подборка вариантов"
+  ],
+  "description": [
+    "Подборка логотипов и знаков для проекта Логотипы."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Логотипы",
+  "cover": "entries/logos-logotipy/cover.webp",
+  "assets": [
+    {
+      "src": "entries/logos-logotipy/cover.webp",
+      "alt": "Логотипы — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/logos-logotipy/asset-02.webp",
+      "alt": "Логотипы — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/logos-logotipy/asset-03.webp",
+      "alt": "Логотипы — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/logos-logotipy/asset-04.webp",
+      "alt": "Логотипы — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/logos-logotipy/asset-05.webp",
+      "alt": "Логотипы — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/logos-logotipy/asset-06.webp",
+      "alt": "Логотипы — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/logos-logotipy/asset-07.webp",
+      "alt": "Логотипы — изображение 07",
+      "caption": "Кадр 07"
+    }
+  ]
+}

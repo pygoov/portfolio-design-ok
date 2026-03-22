@@ -1,0 +1,36 @@
+{
+  "id": "visualizations-rzhd-komnata-otdyh-malenkaya",
+  "slug": "visualizations-rzhd-komnata-otdyh-malenkaya",
+  "title": "РЖД комната отдых маленькая",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД комната отдых маленькая.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД комната отдых маленькая."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД комната отдых маленькая",
+  "cover": "entries/visualizations-rzhd-komnata-otdyh-malenkaya/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-komnata-otdyh-malenkaya/cover.webp",
+      "alt": "РЖД комната отдых маленькая — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-komnata-otdyh-malenkaya/asset-02.webp",
+      "alt": "РЖД комната отдых маленькая — изображение 02",
+      "caption": "Кадр 02"
+    }
+  ],
+  "client": "РЖД"
+}

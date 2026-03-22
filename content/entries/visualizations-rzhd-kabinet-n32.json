@@ -1,0 +1,76 @@
+{
+  "id": "visualizations-rzhd-kabinet-n32",
+  "slug": "visualizations-rzhd-kabinet-n32",
+  "title": "РЖД кабинет №32",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД кабинет №32.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД кабинет №32."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД кабинет №32",
+  "cover": "entries/visualizations-rzhd-kabinet-n32/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/cover.webp",
+      "alt": "РЖД кабинет №32 — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-02.webp",
+      "alt": "РЖД кабинет №32 — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-03.webp",
+      "alt": "РЖД кабинет №32 — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-04.webp",
+      "alt": "РЖД кабинет №32 — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-05.webp",
+      "alt": "РЖД кабинет №32 — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-06.webp",
+      "alt": "РЖД кабинет №32 — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-07.webp",
+      "alt": "РЖД кабинет №32 — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-08.webp",
+      "alt": "РЖД кабинет №32 — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-09.webp",
+      "alt": "РЖД кабинет №32 — изображение 09",
+      "caption": "Кадр 09"
+    },
+    {
+      "src": "entries/visualizations-rzhd-kabinet-n32/asset-10.webp",
+      "alt": "РЖД кабинет №32 — изображение 10",
+      "caption": "Кадр 10"
+    }
+  ],
+  "client": "РЖД"
+}

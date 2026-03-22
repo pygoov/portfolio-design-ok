@@ -1,0 +1,260 @@
+{
+  "id": "brand-photos-foto-realizovannyh-brendov",
+  "slug": "brand-photos-foto-realizovannyh-brendov",
+  "title": "Фото реализованных брендов",
+  "type": "gallery",
+  "hasPage": true,
+  "sections": [
+    "photo-retouch"
+  ],
+  "subsections": [
+    "brand-photos"
+  ],
+  "summary": "Подборка фото и ретуши для проекта Фото реализованных брендов.",
+  "deliverables": [
+    "Фото продукции",
+    "Ретушь"
+  ],
+  "description": [
+    "Подборка фото и ретуши для проекта Фото реализованных брендов."
+  ],
+  "sourcePath": "tmp/Портфолио/ФОТО И РЕТУШЬ/Фото реализованных брендов",
+  "cover": "entries/brand-photos-foto-realizovannyh-brendov/cover.webp",
+  "assets": [
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/cover.webp",
+      "alt": "Фото реализованных брендов — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-02.webp",
+      "alt": "Фото реализованных брендов — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-03.webp",
+      "alt": "Фото реализованных брендов — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-04.webp",
+      "alt": "Фото реализованных брендов — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-05.webp",
+      "alt": "Фото реализованных брендов — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-06.webp",
+      "alt": "Фото реализованных брендов — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-07.webp",
+      "alt": "Фото реализованных брендов — изображение 07",
+      "caption": "Кадр 07"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-08.webp",
+      "alt": "Фото реализованных брендов — изображение 08",
+      "caption": "Кадр 08"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-09.webp",
+      "alt": "Фото реализованных брендов — изображение 09",
+      "caption": "Кадр 09"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-10.webp",
+      "alt": "Фото реализованных брендов — изображение 10",
+      "caption": "Кадр 10"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-11.webp",
+      "alt": "Фото реализованных брендов — изображение 11",
+      "caption": "Кадр 11"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-12.webp",
+      "alt": "Фото реализованных брендов — изображение 12",
+      "caption": "Кадр 12"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-13.webp",
+      "alt": "Фото реализованных брендов — изображение 13",
+      "caption": "Кадр 13"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-14.webp",
+      "alt": "Фото реализованных брендов — изображение 14",
+      "caption": "Кадр 14"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-15.webp",
+      "alt": "Фото реализованных брендов — изображение 15",
+      "caption": "Кадр 15"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-16.webp",
+      "alt": "Фото реализованных брендов — изображение 16",
+      "caption": "Кадр 16"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-17.webp",
+      "alt": "Фото реализованных брендов — изображение 17",
+      "caption": "Кадр 17"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-18.webp",
+      "alt": "Фото реализованных брендов — изображение 18",
+      "caption": "Кадр 18"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-19.webp",
+      "alt": "Фото реализованных брендов — изображение 19",
+      "caption": "Кадр 19"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-20.webp",
+      "alt": "Фото реализованных брендов — изображение 20",
+      "caption": "Кадр 20"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-21.webp",
+      "alt": "Фото реализованных брендов — изображение 21",
+      "caption": "Кадр 21"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-22.webp",
+      "alt": "Фото реализованных брендов — изображение 22",
+      "caption": "Кадр 22"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-23.webp",
+      "alt": "Фото реализованных брендов — изображение 23",
+      "caption": "Кадр 23"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-24.webp",
+      "alt": "Фото реализованных брендов — изображение 24",
+      "caption": "Кадр 24"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-25.webp",
+      "alt": "Фото реализованных брендов — изображение 25",
+      "caption": "Кадр 25"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-26.webp",
+      "alt": "Фото реализованных брендов — изображение 26",
+      "caption": "Кадр 26"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-27.webp",
+      "alt": "Фото реализованных брендов — изображение 27",
+      "caption": "Кадр 27"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-28.webp",
+      "alt": "Фото реализованных брендов — изображение 28",
+      "caption": "Кадр 28"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-29.webp",
+      "alt": "Фото реализованных брендов — изображение 29",
+      "caption": "Кадр 29"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-30.webp",
+      "alt": "Фото реализованных брендов — изображение 30",
+      "caption": "Кадр 30"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-31.webp",
+      "alt": "Фото реализованных брендов — изображение 31",
+      "caption": "Кадр 31"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-32.webp",
+      "alt": "Фото реализованных брендов — изображение 32",
+      "caption": "Кадр 32"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-33.webp",
+      "alt": "Фото реализованных брендов — изображение 33",
+      "caption": "Кадр 33"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-34.webp",
+      "alt": "Фото реализованных брендов — изображение 34",
+      "caption": "Кадр 34"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-35.webp",
+      "alt": "Фото реализованных брендов — изображение 35",
+      "caption": "Кадр 35"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-36.webp",
+      "alt": "Фото реализованных брендов — изображение 36",
+      "caption": "Кадр 36"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-37.webp",
+      "alt": "Фото реализованных брендов — изображение 37",
+      "caption": "Кадр 37"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-38.webp",
+      "alt": "Фото реализованных брендов — изображение 38",
+      "caption": "Кадр 38"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-39.webp",
+      "alt": "Фото реализованных брендов — изображение 39",
+      "caption": "Кадр 39"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-40.webp",
+      "alt": "Фото реализованных брендов — изображение 40",
+      "caption": "Кадр 40"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-41.webp",
+      "alt": "Фото реализованных брендов — изображение 41",
+      "caption": "Кадр 41"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-42.webp",
+      "alt": "Фото реализованных брендов — изображение 42",
+      "caption": "Кадр 42"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-43.webp",
+      "alt": "Фото реализованных брендов — изображение 43",
+      "caption": "Кадр 43"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-44.webp",
+      "alt": "Фото реализованных брендов — изображение 44",
+      "caption": "Кадр 44"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-45.webp",
+      "alt": "Фото реализованных брендов — изображение 45",
+      "caption": "Кадр 45"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-46.webp",
+      "alt": "Фото реализованных брендов — изображение 46",
+      "caption": "Кадр 46"
+    },
+    {
+      "src": "entries/brand-photos-foto-realizovannyh-brendov/asset-47.webp",
+      "alt": "Фото реализованных брендов — изображение 47",
+      "caption": "Кадр 47"
+    }
+  ]
+}

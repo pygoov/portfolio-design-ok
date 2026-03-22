@@ -1,0 +1,31 @@
+{
+  "id": "labels-sphene",
+  "slug": "labels-sphene",
+  "title": "sphene",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "labels"
+  ],
+  "summary": "Подборка макетов этикеток для проекта sphene.",
+  "deliverables": [
+    "Этикетки",
+    "Упаковочные носители"
+  ],
+  "description": [
+    "Подборка макетов этикеток для проекта sphene."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Макеты этикекток/sphene",
+  "cover": "entries/labels-sphene/cover.webp",
+  "assets": [
+    {
+      "src": "entries/labels-sphene/cover.webp",
+      "alt": "sphene — изображение 01",
+      "caption": "Кадр 01"
+    }
+  ],
+  "client": "sphene"
+}

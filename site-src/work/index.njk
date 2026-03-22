@@ -10,11 +10,10 @@ permalink: work/index.html
   <div class="container">
     <div class="page-intro__panel">
       <p class="page-eyebrow">Work</p>
-      <h1 class="page-title">Разделы портфолио теперь собираются из данных</h1>
+      <h1 class="page-title">Разделы портфолио собираются из данных</h1>
       <p class="page-lead">
-        Это первый рабочий срез новой структуры: taxonomy лежит в `content/`,
-        web-ассеты лежат в `media/web/`, а страницы автоматически генерируются
-        шаблонами Eleventy.
+        Таксономия лежит в `content/`, web-ассеты лежат в `media/web/`, а
+        страницы автоматически генерируются шаблонами Eleventy.
       </p>
     </div>
 
@@ -33,20 +32,3 @@ permalink: work/index.html
     </div>
   </div>
 </section>
-
-{% if portfolio.featuredCase %}
-  <section class="section section--compact">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Первый пример кейса</h2>
-        <p class="section-lead">
-          Один реальный проект проходит всю новую цепочку: entry -> section ->
-          subsection -> case page.
-        </p>
-      </div>
-
-      {% set entry = portfolio.featuredCase %}
-      {% include "components/entry-card.njk" %}
-    </div>
-  </section>
-{% endif %}

@@ -1,0 +1,36 @@
+{
+  "id": "labels-misofi",
+  "slug": "labels-misofi",
+  "title": "MiSofi",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "labels"
+  ],
+  "summary": "Подборка макетов этикеток для проекта MiSofi.",
+  "deliverables": [
+    "Этикетки",
+    "Упаковочные носители"
+  ],
+  "description": [
+    "Подборка макетов этикеток для проекта MiSofi."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Макеты этикекток/MiSofi",
+  "cover": "entries/labels-misofi/cover.webp",
+  "assets": [
+    {
+      "src": "entries/labels-misofi/cover.webp",
+      "alt": "MiSofi — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/labels-misofi/asset-02.webp",
+      "alt": "MiSofi — изображение 02",
+      "caption": "Кадр 02"
+    }
+  ],
+  "client": "MiSofi"
+}

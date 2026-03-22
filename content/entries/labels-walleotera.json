@@ -1,0 +1,36 @@
+{
+  "id": "labels-walleotera",
+  "slug": "labels-walleotera",
+  "title": "WALLEOTERA",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "print-packaging"
+  ],
+  "subsections": [
+    "labels"
+  ],
+  "summary": "Подборка макетов этикеток для проекта WALLEOTERA.",
+  "deliverables": [
+    "Этикетки",
+    "Упаковочные носители"
+  ],
+  "description": [
+    "Подборка макетов этикеток для проекта WALLEOTERA."
+  ],
+  "sourcePath": "tmp/Портфолио/ПЕЧАТЬ И МАКЕТЫ/Макеты этикекток/WALLEOTERA",
+  "cover": "entries/labels-walleotera/cover.webp",
+  "assets": [
+    {
+      "src": "entries/labels-walleotera/cover.webp",
+      "alt": "WALLEOTERA — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/labels-walleotera/asset-02.webp",
+      "alt": "WALLEOTERA — изображение 02",
+      "caption": "Кадр 02"
+    }
+  ],
+  "client": "WALLEOTERA"
+}

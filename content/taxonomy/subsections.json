@@ -4,7 +4,107 @@
     "section": "grafika",
     "slug": "marketplaces",
     "title": "Маркетплейсы",
-    "lead": "Карточки товаров и брендовые серии для витрин маркетплейсов: обложки, офферы, преимущества и контентные слайды.",
-    "entryIds": ["pinque"]
+    "lead": "Карточки товаров и брендовые серии для маркетплейсов: обложки, офферы, преимущества и продуктовые слайды.",
+    "entryIds": [
+      "marketplaces-8-slow",
+      "marketplaces-pinque",
+      "marketplaces-qtix",
+      "marketplaces-evsi",
+      "marketplaces-duhi",
+      "marketplaces-martin"
+    ]
+  },
+  {
+    "id": "logos",
+    "section": "grafika",
+    "slug": "logos",
+    "title": "Логотипы",
+    "lead": "Подборки логотипов и знаков, сведенные в быстрые проектные страницы.",
+    "entryIds": [
+      "logos-logotipy"
+    ]
+  },
+  {
+    "id": "mockups",
+    "section": "grafika",
+    "slug": "mockups",
+    "title": "Мокапы",
+    "lead": "Мокапы и презентационные визуалы для демонстрации продукта и фирменной подачи.",
+    "entryIds": [
+      "mockups-mokapy"
+    ]
+  },
+  {
+    "id": "ads",
+    "section": "grafika",
+    "slug": "ads",
+    "title": "Реклама",
+    "lead": "Рекламные визуалы и промо-материалы для публикации и витринной подачи.",
+    "entryIds": [
+      "ads-reklama"
+    ]
+  },
+  {
+    "id": "visualizations",
+    "section": "interior",
+    "slug": "visualizations",
+    "title": "Визуализации и планы",
+    "lead": "Интерьерные проекты с визуализациями и планировочными материалами.",
+    "entryIds": [
+      "visualizations-rzhd-gostinaya",
+      "visualizations-rzhd-zdanie-dushevyh-vizualizatsii",
+      "visualizations-rzhd-zdanie-dushevyh-plany",
+      "visualizations-rzhd-kabinet-n31",
+      "visualizations-rzhd-kabinet-n32",
+      "visualizations-rzhd-komnata-otdyh-bolshaya",
+      "visualizations-rzhd-komnata-otdyh-malenkaya",
+      "visualizations-rzhd-prihozhaya",
+      "visualizations-rzhd-stolovaya"
+    ]
+  },
+  {
+    "id": "labels",
+    "section": "print-packaging",
+    "slug": "labels",
+    "title": "Этикетки",
+    "lead": "Коллекции этикеток и упаковочных материалов, пригодные для web-галерей.",
+    "entryIds": [
+      "labels-makety-etiketok",
+      "labels-mod",
+      "labels-misofi",
+      "labels-sheag",
+      "labels-walleotera",
+      "labels-sphene"
+    ]
+  },
+  {
+    "id": "outdoor",
+    "section": "print-packaging",
+    "slug": "outdoor",
+    "title": "Наружная реклама",
+    "lead": "Носители наружной рекламы и промо-оформление в виде отдельных подборок.",
+    "entryIds": [
+      "outdoor-naruzhnaya-reklama"
+    ]
+  },
+  {
+    "id": "print-layouts",
+    "section": "print-packaging",
+    "slug": "print-layouts",
+    "title": "Рекламные макеты",
+    "lead": "Печатные и рекламные макеты, собранные в проектные страницы и быстрые галереи.",
+    "entryIds": [
+      "print-layouts-reklamnye-makety"
+    ]
+  },
+  {
+    "id": "brand-photos",
+    "section": "photo-retouch",
+    "slug": "brand-photos",
+    "title": "Реализованные бренды",
+    "lead": "Фото реализованных брендов, продуктовые съемки и ретушь для веб-показа.",
+    "entryIds": [
+      "brand-photos-foto-realizovannyh-brendov"
+    ]
   }
 ]

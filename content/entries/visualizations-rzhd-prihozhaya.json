@@ -1,0 +1,41 @@
+{
+  "id": "visualizations-rzhd-prihozhaya",
+  "slug": "visualizations-rzhd-prihozhaya",
+  "title": "РЖД прихожая",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "interior"
+  ],
+  "subsections": [
+    "visualizations"
+  ],
+  "summary": "Подборка интерьерных визуализаций и планов для проекта РЖД прихожая.",
+  "deliverables": [
+    "Визуализации",
+    "Интерьерные материалы"
+  ],
+  "description": [
+    "Подборка интерьерных визуализаций и планов для проекта РЖД прихожая."
+  ],
+  "sourcePath": "tmp/Портфолио/ИНТЕРЬЕР/Визуализации и планы интерьеров, экстерьеров/РЖД прихожая",
+  "cover": "entries/visualizations-rzhd-prihozhaya/cover.webp",
+  "assets": [
+    {
+      "src": "entries/visualizations-rzhd-prihozhaya/cover.webp",
+      "alt": "РЖД прихожая — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/visualizations-rzhd-prihozhaya/asset-02.webp",
+      "alt": "РЖД прихожая — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/visualizations-rzhd-prihozhaya/asset-03.webp",
+      "alt": "РЖД прихожая — изображение 03",
+      "caption": "Кадр 03"
+    }
+  ],
+  "client": "РЖД"
+}

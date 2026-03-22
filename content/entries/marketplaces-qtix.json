@@ -1,0 +1,62 @@
+{
+  "id": "marketplaces-qtix",
+  "slug": "marketplaces-qtix",
+  "title": "QTIX",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "marketplaces"
+  ],
+  "summary": "Подборка карточек маркетплейса для проекта QTIX.",
+  "deliverables": [
+    "Обложки карточек",
+    "Слайды с офферами",
+    "Серия для витрины"
+  ],
+  "description": [
+    "Подборка карточек маркетплейса для проекта QTIX."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Карточки ВБ, ОЗОН/Бренд QTIX",
+  "cover": "entries/marketplaces-qtix/cover.webp",
+  "assets": [
+    {
+      "src": "entries/marketplaces-qtix/cover.webp",
+      "alt": "QTIX — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/marketplaces-qtix/asset-02.webp",
+      "alt": "QTIX — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/marketplaces-qtix/asset-03.webp",
+      "alt": "QTIX — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/marketplaces-qtix/asset-04.webp",
+      "alt": "QTIX — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/marketplaces-qtix/asset-05.webp",
+      "alt": "QTIX — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/marketplaces-qtix/asset-06.webp",
+      "alt": "QTIX — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/marketplaces-qtix/asset-07.webp",
+      "alt": "QTIX — изображение 07",
+      "caption": "Кадр 07"
+    }
+  ],
+  "client": "QTIX"
+}

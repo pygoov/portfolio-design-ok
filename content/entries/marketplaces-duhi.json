@@ -1,0 +1,62 @@
+{
+  "id": "marketplaces-duhi",
+  "slug": "marketplaces-duhi",
+  "title": "Духи",
+  "type": "case",
+  "hasPage": true,
+  "sections": [
+    "grafika"
+  ],
+  "subsections": [
+    "marketplaces"
+  ],
+  "summary": "Подборка карточек маркетплейса для проекта Духи.",
+  "deliverables": [
+    "Обложки карточек",
+    "Слайды с офферами",
+    "Серия для витрины"
+  ],
+  "description": [
+    "Подборка карточек маркетплейса для проекта Духи."
+  ],
+  "sourcePath": "tmp/Портфолио/ГРАФИКА/Карточки ВБ, ОЗОН/Духи",
+  "cover": "entries/marketplaces-duhi/cover.webp",
+  "assets": [
+    {
+      "src": "entries/marketplaces-duhi/cover.webp",
+      "alt": "Духи — изображение 01",
+      "caption": "Кадр 01"
+    },
+    {
+      "src": "entries/marketplaces-duhi/asset-02.webp",
+      "alt": "Духи — изображение 02",
+      "caption": "Кадр 02"
+    },
+    {
+      "src": "entries/marketplaces-duhi/asset-03.webp",
+      "alt": "Духи — изображение 03",
+      "caption": "Кадр 03"
+    },
+    {
+      "src": "entries/marketplaces-duhi/asset-04.webp",
+      "alt": "Духи — изображение 04",
+      "caption": "Кадр 04"
+    },
+    {
+      "src": "entries/marketplaces-duhi/asset-05.webp",
+      "alt": "Духи — изображение 05",
+      "caption": "Кадр 05"
+    },
+    {
+      "src": "entries/marketplaces-duhi/asset-06.webp",
+      "alt": "Духи — изображение 06",
+      "caption": "Кадр 06"
+    },
+    {
+      "src": "entries/marketplaces-duhi/asset-07.webp",
+      "alt": "Духи — изображение 07",
+      "caption": "Кадр 07"
+    }
+  ],
+  "client": "Духи"
+}
