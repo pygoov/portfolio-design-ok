@@ -1,168 +1,125 @@
 # AGENTS.md
 
-## Repository Mission
-This repository is the working source for a designer portfolio system.
+## Зачем нужен этот репозиторий
+Это рабочий репозиторий портфолио-дизайнера.
 
-It is intended to support four coordinated outputs:
-1. A public portfolio website.
-2. An AI-readable knowledge base of skills and experience.
-3. Curated PDF packets for specific directions or requests.
-4. Repo-level guidance for AI agents working in the project.
+Сейчас в нем в первую очередь развивается сайт на `Eleventy`.
+Позже из той же структуры могут появиться:
+- AI-readable база знаний
+- PDF-подборки
+- вспомогательные инструкции для ИИ-агентов
 
-At the moment, only the website stack is partially implemented.
+## Текущее состояние
+Сайт уже не single-page в чистом виде.
 
-## Current Phase
-The repository is in early implementation mode.
+Уже реализовано:
+- главная страница в [site-src/index.njk](/home/goov/git/portfolio-design-ok/site-src/index.njk)
+- страницы `work`
+- страницы разделов и подразделов
+- автогенерация case pages из `content/entries`
+- data-loader в [site-src/_data/portfolio.js](/home/goov/git/portfolio-design-ok/site-src/_data/portfolio.js)
+- слой `media/web`, который копируется в `docs/assets/media`
 
-What is already implemented:
-1. A clean static-site build based on Eleventy.
-2. A single-page portfolio starter in `site-src/`.
-3. Build output to `docs/` for GitHub Pages.
-4. Local reference images copied into project assets.
-5. A raw portfolio intake archive in `tmp/Портфолио/`.
-6. A first-pass asset audit in `pf_map.md`.
-7. Base scaffolding for `content/`, `media/`, `site-src/_includes/`, `site-src/work/`, and `site-src/cases/`.
+Важно:
+- часть главной страницы все еще выглядит как стартовая витрина
+- контент уже partially data-driven
+- структура продолжает развиваться
 
-What is not implemented yet, but is planned:
-1. Wire reusable partial templates into the live site.
-2. Populate structured taxonomy and entry content files.
-3. Build multi-page `work` and `case` routes from structured content.
-4. Curate canonical media and produce web-ready asset exports.
-5. AI-readable knowledge base layer.
-6. PDF source and export flow.
+## Главные правила
+- Не редактировать `docs/` вручную, если это не было явно запрошено.
+- Основной исходник сайта: `site-src/`.
+- Основной исходник структуры контента: `content/`.
+- Основной исходник web-медиа: `media/web/`.
+- Не возвращать Tilda-код, Tilda-CSS, Tilda-JS и Tilda-зависимости.
+- GitHub Pages compatibility обязательна.
 
-## Current Stack
-- Runtime/build tool: `Node.js` + `npm`
-- Static site generator: `Eleventy` `3.1.5`
-- Template format: `Nunjucks` (`.njk`)
-- Site source directory: `site-src/`
-- GitHub Pages output directory: `docs/`
-- Main stylesheet: `site-src/site.css`
-- Asset passthrough: `site-src/assets/`
-- CSS foundation: custom CSS with `Open Props` loaded via CDN
-- Font loading: `Google Fonts` (`Manrope`) via CDN
+## Что сейчас является source of truth
+- Шаблоны, маршруты и стили: `site-src/`
+- Таксономия и entry-описания: `content/`
+- Подготовленные картинки для сайта: `media/web/`
+- Выход сборки: `docs/`
 
-Current npm scripts:
-- `npm run dev`
-- `npm run build`
+Временные рабочие материалы:
+- `tmp/Портфолио/`
+- `pf_map.md`
 
-## Hard Constraints
-- Do not reintroduce any Tilda runtime, CSS, JS, tracking, or Tilda-hosted dependencies.
-- Do not hand-edit generated files in `docs/` unless explicitly requested.
-- The public site must remain compatible with GitHub Pages static hosting.
-- Prefer local project assets over remote media URLs.
+Эти два слоя нужны для разбора и переноса контента. Они не считаются стабильной архитектурой сайта.
 
-## Current Public Site Structure
-The implemented starter page currently includes these sections:
-- `Header`
-- `Hero`
-- `Gallery`
-- `Projects CTA`
-- `Capabilities`
-- `Footer`
+## Как агенту понимать пользовательские запросы
+Пользователь может писать не технически, коротко и по-русски.
+Это нормально.
 
-The broader target information architecture still includes:
-- `Home`
-- `Work`
-- `Case Study`
-- `Services`
-- `Skills`
-- `About`
-- `Contact`
+Агент должен:
+- интерпретировать простые человеческие формулировки без требования точных терминов
+- сам сопоставлять слова пользователя со структурой проекта
+- предлагать конкретный следующий шаг, а не абстрактную теорию
+- не заставлять пользователя описывать внутреннюю архитектуру сайта
 
-Those extra pages and layers are planned, not implemented.
+Примеры интерпретации:
+- “добавь работу” -> обычно значит завести `entry`, подготовить медиа и подключить в листинги
+- “исправь главную” -> обычно значит править `site-src/index.njk` и связанные блоки/стили
+- “добавь раздел” -> обычно значит обновить taxonomy и, если нужно, шаблоны листингов
+- “вытащи картинки” -> обычно значит отобрать из `tmp/Портфолио/`, перенести в `media/source` и/или `media/web`
 
-## Current Repository Layout
-```text
-/
-|-- .eleventy.js                # Eleventy config
-|-- .gitignore
-|-- AGENTS.md
-|-- README.md
-|-- content/                    # scaffold for structured portfolio content
-|   |-- README.md
-|   |-- entries/
-|   `-- taxonomy/
-|-- media/                      # scaffold for curated portfolio media
-|   |-- README.md
-|   |-- source/
-|   `-- web/
-|-- package.json
-|-- package-lock.json
-|-- pf_map.md                   # first-pass asset inventory
-|-- repo-map.md
-|-- docs/                       # generated GitHub Pages output
-|   |-- index.html
-|   |-- site.css
-|   `-- assets/
-|       `-- reference/
-|-- tmp/                        # raw intake archive
-|   `-- Портфолио/
-`-- site-src/                   # canonical website source
-    |-- _includes/
-    |   |-- blocks/
-    |   |-- components/
-    |   `-- layouts/
-    |-- cases/
-    |-- index.njk
-    |-- site.css
-    |-- work/
-    `-- assets/
-        `-- reference/
-```
+## Контентная модель
+Сайт строится вокруг трех сущностей:
+- `section`
+- `subsection`
+- `entry`
 
-## Source Of Truth Rules
-- `site-src/` is the current source of truth for the live website templates and routes.
-- `docs/` is generated output for GitHub Pages.
-- `docs/` should be treated as build output, not primary authoring source.
-- `site-src/assets/` is the current source of truth for starter-site media already wired into the page.
-- `content/` and `media/` now exist as scaffold layers for future canonical ownership.
-- `tmp/Портфолио/` remains the raw intake layer until files are curated.
-- `pf_map.md` is the current first-pass audit of the intake archive.
-- `knowledge/` and `pdf/` do not exist yet.
-- `repo-map.md` must be updated when structure or ownership changes.
+`entry` бывает двух типов:
+- `case` — у проекта есть своя страница
+- `gallery` — проект показывается только в листингах или подборках
 
-## Build Rules
-- Build command: `npm run build`
-- Dev command: `npm run dev`
-- Eleventy reads from `site-src/` and writes to `docs/`
-- Asset passthrough currently copies `site-src/assets/` and `site-src/site.css`
+Текущие данные лежат в:
+- [content/taxonomy/sections.json](/home/goov/git/portfolio-design-ok/content/taxonomy/sections.json)
+- [content/taxonomy/subsections.json](/home/goov/git/portfolio-design-ok/content/taxonomy/subsections.json)
+- [content/entries](/home/goov/git/portfolio-design-ok/content/entries)
 
-## Styling Rules
-- Use custom CSS as the primary styling layer.
-- `Open Props` is currently acceptable as a lightweight token/normalize dependency.
-- `Google Fonts` is currently acceptable, but may be localized later if full offline hosting is required.
-- Do not add heavy UI frameworks unless there is a clear reason.
-- Preserve the portfolio's custom visual direction rather than falling back to generic framework defaults.
+## Медиа-логика
+- `media/source/` — отобранные мастер-файлы
+- `media/web/` — web-ready файлы
+- `media/web/` не раздается напрямую
+- при сборке `media/web/` копируется в `docs/assets/media/`
 
-## Agent Workflow Rules
-Before making structural changes:
-1. Read `AGENTS.md`.
-2. Read `repo-map.md`.
-3. Identify whether the change belongs to website source, generated output, assets, or future planned layers.
+Это настраивается в [.eleventy.js](/home/goov/git/portfolio-design-ok/.eleventy.js).
 
-When working in this repository:
-- Edit `site-src/` first.
-- Rebuild `docs/` after source changes that affect the public site.
-- Do not manually port old Tilda markup, scripts, or styles into the new source.
-- Keep file and folder names predictable and machine-readable.
-- If a new top-level directory is added, document it in `repo-map.md`.
-- If content is moved out of templates into dedicated files, document ownership clearly.
+## Базовый рабочий поток для агента
+Если задача касается контента:
+1. Проверить `content/taxonomy` и `content/entries`.
+2. Проверить, хватает ли уже существующих шаблонов.
+3. При необходимости подготовить медиа в `media/web`.
+4. Пересобрать сайт.
 
-## Near-Term Priorities
-The next useful steps are:
-1. Define the first taxonomy in `content/taxonomy/`.
-2. Create the first real entry files in `content/entries/`.
-3. Split `site-src/index.njk` into reusable partial blocks and layouts.
-4. Build the first `work` and `case` routes from structured content.
+Если задача касается структуры страниц:
+1. Править `site-src/`.
+2. Не трогать `docs/` вручную.
+3. После изменений запускать `npm run build`.
 
-## Planned But Not Yet Implemented
-These layers or files are still not implemented even though some scaffold paths now exist:
-- populated taxonomy files in `content/taxonomy/`
-- populated entry files in `content/entries/`
-- reusable templates wired from `site-src/_includes/`
-- real route files inside `site-src/work/` and `site-src/cases/`
-- `knowledge/`
-- `pdf/`
+Если задача касается сырого архива:
+1. Брать материалы из `tmp/Портфолио/`.
+2. Не считать названия папок в архиве финальной IA сайта.
+3. Переносить только отобранные и пригодные материалы.
 
-Treat the scaffold as infrastructure, not as finished implementation.
+## Build
+- dev: `npm run dev`
+- build: `npm run build`
+
+Eleventy:
+- читает `site-src/`
+- использует данные из `content/` через `site-src/_data/portfolio.js`
+- копирует `site-src/assets/`, `site-src/site.css` и `media/web/`
+- пишет результат в `docs/`
+
+## Что обновлять при структурных изменениях
+Если меняется логика проекта, агент должен обновить:
+- `AGENTS.md`
+- `repo-map.md`
+
+Если появляется новый устойчивый слой, он должен быть описан в обоих файлах.
+
+## Ближайшее направление развития
+- довести главную страницу от технической заготовки до реальной витрины
+- разделить `entry` на полноценные `case` и `gallery`
+- улучшить тексты, названия и alt-подписи
+- продолжить перенос реальных проектов из временного архива в каноническую структуру
