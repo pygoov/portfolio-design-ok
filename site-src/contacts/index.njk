@@ -1,0 +1,81 @@
+---
+layout: layouts/base.njk
+title: Контакты
+metaDescription: "Контакты, социальные сети и способы связи."
+permalink: contacts/index.html
+---
+{% set root = page.url | rootPrefix %}
+{% set breadcrumbItems = [
+  { "label": "Главная", "href": root },
+  { "label": "Контакты" }
+] %}
+
+<section class="section page-intro">
+  <div class="container">
+    {% include "components/breadcrumb.njk" %}
+
+    <div class="page-intro__panel">
+      <p class="page-eyebrow">{{ contacts.eyebrow }}</p>
+      <h1 class="page-title">{{ contacts.title }}</h1>
+      <p class="page-lead">{{ contacts.lead }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--compact contacts-page">
+  <div class="container">
+    <div class="contacts-hero">
+      <div class="contacts-hero__panel">
+        <h2 class="section-title">Связаться напрямую</h2>
+        <p class="section-lead">{{ contacts.intro }}</p>
+
+        <div class="contact-grid">
+          {% for item in contacts.direct %}
+            <article class="contact-card">
+              <p class="contact-card__label">{{ item.label }}</p>
+              {% if item.href %}
+                <a class="contact-card__value" href="{{ item.href }}">{{ item.value }}</a>
+              {% else %}
+                <p class="contact-card__value">{{ item.value }}</p>
+              {% endif %}
+              <p class="contact-card__note">{{ item.note }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      <aside class="contacts-aside">
+        <p class="contacts-aside__eyebrow">Навигация</p>
+        <h2 class="contacts-aside__title">Все ссылки в одном месте</h2>
+        <p class="contacts-aside__text">
+          Эта страница сделана как отдельный раздел сайта и выдержана в той же визуальной логике, что и главная.
+        </p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Соцсети и профили</h2>
+      <p class="section-lead">
+        Здесь можно хранить публичные площадки, на которые удобно отправлять клиентов и партнёров.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      {% for item in contacts.social %}
+        <article class="contact-card contact-card--social">
+          <p class="contact-card__label">{{ item.label }}</p>
+          {% if item.href %}
+            <a class="contact-card__value" href="{{ item.href }}">{{ item.value }}</a>
+          {% else %}
+            <p class="contact-card__value">{{ item.value }}</p>
+          {% endif %}
+          <p class="contact-card__note">{{ item.note }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
