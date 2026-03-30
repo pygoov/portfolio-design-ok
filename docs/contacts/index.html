@@ -30,7 +30,7 @@
         />
       </span>
       <span class="brand__text">
-        <span class="brand__name">Designer Portfolio</span>
+        <span class="brand__name">Портфолио дизайнера</span>
         <span class="brand__title">Олеся Караульных</span>
       </span>
     </a>
@@ -70,9 +70,8 @@
 
 
     <div class="page-intro__panel">
-      <p class="page-eyebrow">Contacts</p>
-      <h1 class="page-title">Контакты и ссылки на соцсети</h1>
-      <p class="page-lead">Здесь собраны основные способы связи и ссылки на профили. Данные вынесены в отдельный слой, чтобы их можно было обновлять без правки шаблона страницы.</p>
+      <h1 class="page-title">Контакты и соцсети</h1>
+      <p class="page-lead">Здесь собраны основные способы связи и ссылки на профили. Данные вынесены отдельно, чтобы их можно было обновлять без правки шаблона страницы.</p>
     </div>
   </div>
 </section>
@@ -82,24 +81,24 @@
     <div class="contacts-hero">
       <div class="contacts-hero__panel">
         <h2 class="section-title">Связаться напрямую</h2>
-        <p class="section-lead">Если понадобится заменить почту, телефон или ссылку на соцсеть, достаточно обновить этот data-файл.</p>
+        <p class="section-lead">Если понадобится заменить почту, телефон или ссылку на соцсеть, достаточно обновить файл с данными.</p>
 
         <div class="contact-grid">
           
             <article class="contact-card">
-              <p class="contact-card__label">Email</p>
+              <p class="contact-card__label">Эл. почта</p>
               
-                <p class="contact-card__value">Добавьте рабочий email</p>
+                <a class="contact-card__value" href="mailto:olesyakar@bk.ru">olesyakar@bk.ru</a>
               
-              <p class="contact-card__note">Например: hello@example.com</p>
+              <p class="contact-card__note">Для вопросов, обсуждения проекта и связи</p>
             </article>
           
             <article class="contact-card">
               <p class="contact-card__label">Телефон</p>
               
-                <p class="contact-card__value">Добавьте номер для связи</p>
+                <a class="contact-card__value" href="tel:+79673489223">+79673489223</a>
               
-              <p class="contact-card__note">Например: +7 (900) 000-00-00</p>
+              <p class="contact-card__note">Можно позвонить или написать для быстрой связи</p>
             </article>
           
         </div>
@@ -108,9 +107,6 @@
       <aside class="contacts-aside">
         <p class="contacts-aside__eyebrow">Навигация</p>
         <h2 class="contacts-aside__title">Все ссылки в одном месте</h2>
-        <p class="contacts-aside__text">
-          Эта страница сделана как отдельный раздел сайта и выдержана в той же визуальной логике, что и главная.
-        </p>
       </aside>
     </div>
   </div>
@@ -121,7 +117,7 @@
     <div class="section-head">
       <h2 class="section-title">Соцсети и профили</h2>
       <p class="section-lead">
-        Здесь можно хранить публичные площадки, на которые удобно отправлять клиентов и партнёров.
+        Здесь собраны площадки, где можно посмотреть больше работ и связаться удобным способом.
       </p>
     </div>
 
@@ -144,11 +140,35 @@
         </article>
       
         <article class="contact-card contact-card--social">
-          <p class="contact-card__label">Instagram</p>
+          <p class="contact-card__label">VK</p>
           
-            <p class="contact-card__value">Добавьте ссылку на Instagram</p>
+            <p class="contact-card__value">Добавьте ссылку на VK</p>
           
-          <p class="contact-card__note">Например: https://www.instagram.com/username</p>
+          <p class="contact-card__note">Например: https://vk.com/username</p>
+        </article>
+      
+        <article class="contact-card contact-card--social">
+          <p class="contact-card__label">WhatsApp</p>
+          
+            <p class="contact-card__value">Добавьте ссылку на WhatsApp</p>
+          
+          <p class="contact-card__note">Например: https://wa.me/79673489223</p>
+        </article>
+      
+        <article class="contact-card contact-card--social">
+          <p class="contact-card__label">Pinterest</p>
+          
+            <p class="contact-card__value">Добавьте ссылку на Pinterest</p>
+          
+          <p class="contact-card__note">Например: https://www.pinterest.com/username</p>
+        </article>
+      
+        <article class="contact-card contact-card--social">
+          <p class="contact-card__label">Dribbble</p>
+          
+            <p class="contact-card__value">Добавьте ссылку на Dribbble</p>
+          
+          <p class="contact-card__note">Например: https://dribbble.com/username</p>
         </article>
       
     </div>
@@ -159,8 +179,7 @@
   <div class="container">
     <div class="site-footer__panel">
       <p class="site-footer__text">
-        Разделы, подразделы и кейсы уже собираются из `content/`, а
-        опубликованные изображения приходят из `media/web/`.
+        Если что-то забыли всегда можно вернуться наверх
       </p>
       <a class="site-footer__top" href="#top">Наверх</a>
     </div>
@@ -168,5 +187,33 @@
 </footer>
 
     </div>
+    <script>
+      (() => {
+        const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (media.matches) return;
+
+        let ticking = false;
+
+        const updateBackground = () => {
+          const y = window.scrollY || window.pageYOffset || 0;
+          const root = document.documentElement;
+
+          root.style.setProperty("--bg-shift-x", `${y * 0.018}px`);
+          root.style.setProperty("--bg-shift-y", `${y * -0.042}px`);
+          root.style.setProperty("--bg-shift-x-2", `${y * -0.016}px`);
+          root.style.setProperty("--bg-shift-y-2", `${y * 0.03}px`);
+          ticking = false;
+        };
+
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(updateBackground);
+        };
+
+        updateBackground();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>

@@ -23,5 +23,33 @@
       <main>{{ content | safe }}</main>
       {% include "blocks/site-footer.njk" %}
     </div>
+    <script>
+      (() => {
+        const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (media.matches) return;
+
+        let ticking = false;
+
+        const updateBackground = () => {
+          const y = window.scrollY || window.pageYOffset || 0;
+          const root = document.documentElement;
+
+          root.style.setProperty("--bg-shift-x", `${y * 0.018}px`);
+          root.style.setProperty("--bg-shift-y", `${y * -0.042}px`);
+          root.style.setProperty("--bg-shift-x-2", `${y * -0.016}px`);
+          root.style.setProperty("--bg-shift-y-2", `${y * 0.03}px`);
+          ticking = false;
+        };
+
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(updateBackground);
+        };
+
+        updateBackground();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>

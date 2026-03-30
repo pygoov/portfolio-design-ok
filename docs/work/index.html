@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Первый пример новой структуры портфолио: разделы и кейсы собираются из content layer."
+      content="Разделы портфолио с работами по разным направлениям дизайна."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
         />
       </span>
       <span class="brand__text">
-        <span class="brand__name">Designer Portfolio</span>
+        <span class="brand__name">Портфолио дизайнера</span>
         <span class="brand__title">Олеся Караульных</span>
       </span>
     </a>
@@ -48,18 +48,14 @@
 <section class="section page-intro">
   <div class="container">
     <div class="page-intro__panel">
-      <p class="page-eyebrow">Work</p>
-      <h1 class="page-title">Разделы портфолио собираются из данных</h1>
-      <p class="page-lead">
-        Таксономия лежит в `content/`, web-ассеты лежат в `media/web/`, а
-        страницы автоматически генерируются шаблонами Eleventy.
-      </p>
+      <p class="page-eyebrow">Работы</p>
+      <h1 class="page-title">Разделы портфолио</h1>
     </div>
 
     <div class="section-grid">
       
         <a class="section-card" href="../work/grafika/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Графика</h2>
           <p class="section-card__lead">Коммерческая графика с акцентом на карточки маркетплейсов, рекламные визуалы, логотипы и презентационные подборки.</p>
           <p class="section-card__meta">
@@ -69,7 +65,7 @@
         </a>
       
         <a class="section-card" href="../work/interior/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Интерьер</h2>
           <p class="section-card__lead">Визуализации и планы интерьерных пространств, собранные в отдельные проектные страницы.</p>
           <p class="section-card__meta">
@@ -79,7 +75,7 @@
         </a>
       
         <a class="section-card" href="../work/print-packaging/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Печать и упаковка</h2>
           <p class="section-card__lead">Этикетки, наружная реклама и печатные макеты, подготовленные как самостоятельные проекты или коллекции.</p>
           <p class="section-card__meta">
@@ -89,7 +85,7 @@
         </a>
       
         <a class="section-card" href="../work/photo-retouch/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Фото и ретушь</h2>
           <p class="section-card__lead">Фото реализованных брендов и продуктовая ретушь, пригодные для web-публикации.</p>
           <p class="section-card__meta">
@@ -106,8 +102,7 @@
   <div class="container">
     <div class="site-footer__panel">
       <p class="site-footer__text">
-        Разделы, подразделы и кейсы уже собираются из `content/`, а
-        опубликованные изображения приходят из `media/web/`.
+        Если что-то забыли всегда можно вернуться наверх
       </p>
       <a class="site-footer__top" href="#top">Наверх</a>
     </div>
@@ -115,5 +110,33 @@
 </footer>
 
     </div>
+    <script>
+      (() => {
+        const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (media.matches) return;
+
+        let ticking = false;
+
+        const updateBackground = () => {
+          const y = window.scrollY || window.pageYOffset || 0;
+          const root = document.documentElement;
+
+          root.style.setProperty("--bg-shift-x", `${y * 0.018}px`);
+          root.style.setProperty("--bg-shift-y", `${y * -0.042}px`);
+          root.style.setProperty("--bg-shift-x-2", `${y * -0.016}px`);
+          root.style.setProperty("--bg-shift-y-2", `${y * 0.03}px`);
+          ticking = false;
+        };
+
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(updateBackground);
+        };
+
+        updateBackground();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>

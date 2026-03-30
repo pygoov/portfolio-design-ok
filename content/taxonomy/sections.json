@@ -3,7 +3,7 @@
     "id": "grafika",
     "slug": "grafika",
     "title": "Графика",
-    "eyebrow": "Раздел",
+    "eyebrow": "",
     "lead": "Коммерческая графика с акцентом на карточки маркетплейсов, рекламные визуалы, логотипы и презентационные подборки.",
     "subsections": [
       "marketplaces",
@@ -16,7 +16,7 @@
     "id": "interior",
     "slug": "interior",
     "title": "Интерьер",
-    "eyebrow": "Раздел",
+    "eyebrow": "",
     "lead": "Визуализации и планы интерьерных пространств, собранные в отдельные проектные страницы.",
     "subsections": [
       "visualizations"
@@ -26,7 +26,7 @@
     "id": "print-packaging",
     "slug": "print-packaging",
     "title": "Печать и упаковка",
-    "eyebrow": "Раздел",
+    "eyebrow": "",
     "lead": "Этикетки, наружная реклама и печатные макеты, подготовленные как самостоятельные проекты или коллекции.",
     "subsections": [
       "labels",
@@ -38,7 +38,7 @@
     "id": "photo-retouch",
     "slug": "photo-retouch",
     "title": "Фото и ретушь",
-    "eyebrow": "Раздел",
+    "eyebrow": "",
     "lead": "Фото реализованных брендов и продуктовая ретушь, пригодные для web-публикации.",
     "subsections": [
       "brand-photos"

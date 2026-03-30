@@ -21,7 +21,6 @@ eleventyComputed:
     {% include "components/breadcrumb.njk" %}
 
     <div class="page-intro__panel">
-      <p class="page-eyebrow">{{ section.eyebrow }}</p>
       <h1 class="page-title">{{ section.title }}</h1>
       <p class="page-lead">{{ section.lead }}</p>
     </div>
@@ -36,14 +35,6 @@ eleventyComputed:
 
 <section class="section section--compact">
   <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Материалы раздела</h2>
-      <p class="section-lead">
-        Страница собирается автоматически из связей
-        `section -> subsection -> entry`.
-      </p>
-    </div>
-
     <div class="entry-grid">
       {% for entry in section.entries %}
         {% include "components/entry-card.njk" %}

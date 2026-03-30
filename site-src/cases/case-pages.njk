@@ -51,11 +51,6 @@ eleventyComputed:
             {% for paragraph in entry.description %}
               <p>{{ paragraph }}</p>
             {% endfor %}
-          {% else %}
-            <p>
-              Проект автоматически собран из structured entry и подготовленных
-              web-ассетов.
-            </p>
           {% endif %}
         </div>
       </div>
@@ -75,10 +70,6 @@ eleventyComputed:
   <div class="container">
     <div class="section-head">
       <h2 class="section-title">Галерея проекта</h2>
-      <p class="section-lead">
-        Изображения на этой странице приходят из `media/web/`, а не из
-        временного intake-архива.
-      </p>
     </div>
 
     <div class="asset-grid">

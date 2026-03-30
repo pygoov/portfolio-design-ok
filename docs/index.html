@@ -30,7 +30,7 @@
         />
       </span>
       <span class="brand__text">
-        <span class="brand__name">Designer Portfolio</span>
+        <span class="brand__name">Портфолио дизайнера</span>
         <span class="brand__title">Олеся Караульных</span>
       </span>
     </a>
@@ -47,30 +47,48 @@
 
 <section class="hero">
   <div class="container hero__panel">
-    <div>
+    <div class="hero__content">
       <div class="hero__eyebrow">Портфолио</div>
       <h1 class="hero__title">
-        Привет, хочешь покажу кое-что интересное?
+        Загляни, тут&nbsp;есть на&nbsp;что посмотреть
       </h1>
-      <p class="hero__text">
-        Здесь собраны работы по графике, интерьеру, печати и ретуши. Можно
-        просто посмотреть подборки или перейти в отдельные кейсы с деталями.
+      <p class="hero__note">
+        От айдентики и полиграфии до интерьерных решений и ретуши.
       </p>
 
       <div class="button-row">
         <a class="button button--primary" href="work/">
           <span>Смотреть работы</span>
         </a>
+        <a class="button button--ghost" href="contacts/">
+          <span>Связаться</span>
+        </a>
+      </div>
+
+      <div class="hero__tags" aria-label="Направления дизайна">
+        <span class="hero__tag">Графика</span>
+        <span class="hero__tag">Интерьер</span>
+        <span class="hero__tag">Полиграфия</span>
+        <span class="hero__tag">Ретушь</span>
       </div>
     </div>
 
     <div class="hero__visual" aria-hidden="true">
-      <div class="hero__card">
-        <h2 class="hero__card-title">Работы собраны по направлениям</h2>
+      <div class="hero__orbit hero__orbit--one"></div>
+      <div class="hero__orbit hero__orbit--two"></div>
+      <div class="hero__card hero__card--main">
+        <p class="hero__card-label">Как устроено портфолио</p>
+        <h2 class="hero__card-title">Проекты собраны по направлениям</h2>
         <p class="hero__card-text">
-          Так проще быстро сориентироваться: открыть нужный раздел, посмотреть
-          подборки и перейти к тем проектам, которые интересны именно тебе.
+          Так проще быстро найти нужный формат работы и посмотреть подходящие
+          примеры.
         </p>
+      </div>
+      <div class="hero__mini-card hero__mini-card--top">
+        <span>Разделы и примеры</span>
+      </div>
+      <div class="hero__mini-card hero__mini-card--bottom">
+        <span>Быстрый вход в работы</span>
       </div>
     </div>
   </div>
@@ -79,17 +97,18 @@
 <section class="section section--compact">
   <div class="container">
     <div class="section-head">
+      <p class="section-kicker">Что можно посмотреть</p>
       <h2 class="section-title">Разделы портфолио</h2>
       <p class="section-lead">
-        Главная теперь ведет не на якоря внутри одной страницы, а в реальную
-        структуру сайта, собранную из taxonomy и entry-файлов.
+        Работы собраны по направлениям, чтобы было проще быстро сориентироваться
+        и открыть именно то, что интересно сейчас.
       </p>
     </div>
 
     <div class="section-grid">
       
         <a class="section-card" href="work/grafika/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Графика</h2>
           <p class="section-card__lead">Коммерческая графика с акцентом на карточки маркетплейсов, рекламные визуалы, логотипы и презентационные подборки.</p>
           <p class="section-card__meta">
@@ -99,7 +118,7 @@
         </a>
       
         <a class="section-card" href="work/interior/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Интерьер</h2>
           <p class="section-card__lead">Визуализации и планы интерьерных пространств, собранные в отдельные проектные страницы.</p>
           <p class="section-card__meta">
@@ -109,7 +128,7 @@
         </a>
       
         <a class="section-card" href="work/print-packaging/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Печать и упаковка</h2>
           <p class="section-card__lead">Этикетки, наружная реклама и печатные макеты, подготовленные как самостоятельные проекты или коллекции.</p>
           <p class="section-card__meta">
@@ -119,7 +138,7 @@
         </a>
       
         <a class="section-card" href="work/photo-retouch/">
-          <p class="section-card__eyebrow">Раздел</p>
+          <p class="section-card__eyebrow"></p>
           <h2 class="section-card__title">Фото и ретушь</h2>
           <p class="section-card__lead">Фото реализованных брендов и продуктовая ретушь, пригодные для web-публикации.</p>
           <p class="section-card__meta">
@@ -134,10 +153,10 @@
 
 <section class="section gallery">
   <div class="container">
-    <h2 class="section-title">Стартовая витрина</h2>
+    <h2 class="section-title">Некоторые из работ</h2>
     <p class="section-lead">
-      Эта часть пока сохраняет формат стартовой страницы и служит визуальным
-      входом в портфолио, пока новые кейсы поэтапно переносятся в content layer.
+      Несколько визуальных фрагментов для первого впечатления, если хочется
+      сначала просто посмотреть общий настрой и характер работ.
     </p>
 
     <div class="gallery__grid">
@@ -145,118 +164,38 @@
         <img
           class="gallery-card__image"
           src="assets/reference/gallery-01.png"
-          alt="Избранная работа 01"
+          alt="Подборка работ из портфолио, крупный визуал"
         />
-        <figcaption class="gallery-card__caption">Избранная работа 01</figcaption>
+        <figcaption class="gallery-card__caption">Избранный фрагмент</figcaption>
       </figure>
       <div class="gallery__stack">
         <figure class="gallery-card">
           <img
             class="gallery-card__image"
             src="assets/reference/gallery-02.jpg"
-            alt="Избранная работа 02"
+            alt="Фрагмент визуальной подборки из портфолио"
           />
-          <figcaption class="gallery-card__caption">Избранная работа 02</figcaption>
+          <figcaption class="gallery-card__caption">Графика и акценты</figcaption>
         </figure>
         <figure class="gallery-card">
           <img
             class="gallery-card__image"
             src="assets/reference/gallery-03.jpeg"
-            alt="Избранная работа 03"
+            alt="Ещё один фрагмент визуальной подборки из портфолио"
           />
-          <figcaption class="gallery-card__caption">Избранная работа 03</figcaption>
+          <figcaption class="gallery-card__caption">Форма и фактура</figcaption>
         </figure>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section projects-cta">
-  <div class="container">
-    <div class="projects-cta__panel">
-      <h2 class="projects-cta__title">Открыть многослойную структуру сайта</h2>
-      <p class="projects-cta__text">
-        Новый слой собирает разделы и кейсы из отдельных данных и web-ready
-        медиа. Дальше эта же схема масштабируется на остальные реальные работы.
-      </p>
-      <div class="button-row">
-        <a class="button button--primary" href="work/">
-          <span>Открыть все разделы</span>
-        </a>
-        <a class="button button--ghost" href="work/grafika/marketplaces/">
-          Маркетплейсы
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section capabilities">
-  <div class="container">
-    <h2 class="section-title">Как сейчас устроен переход</h2>
-    <p class="section-lead">
-      Главная уже работает как входная страница для новой системы и показывает,
-      как дальше будут подключаться разделы, кейсы и медиа.
-    </p>
-
-    <div class="capabilities__grid">
-      <article class="capability-card">
-        <div class="capability-card__badge">
-          <img
-            class="capability-card__icon"
-            src="assets/reference/icon-analytics.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </div>
-        <h3 class="capability-card__title">Content layer</h3>
-        <p class="capability-card__text">
-          Разделы, подразделы и кейсы больше не должны жить в одном монолитном
-          шаблоне. Они описываются отдельно и затем собираются в страницы.
-        </p>
-      </article>
-
-      <article class="capability-card">
-        <div class="capability-card__badge">
-          <img
-            class="capability-card__icon"
-            src="assets/reference/icon-marketing.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </div>
-        <h3 class="capability-card__title">Curated media</h3>
-        <p class="capability-card__text">
-          Для сайта используются не случайные файлы из intake-архива, а
-          подготовленные web-ready ассеты, которые копируются в итоговый build.
-        </p>
-      </article>
-
-      <article class="capability-card">
-        <div class="capability-card__badge">
-          <img
-            class="capability-card__icon"
-            src="assets/reference/icon-concepts.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </div>
-        <h3 class="capability-card__title">Case routes</h3>
-        <p class="capability-card__text">
-          Большие проекты получают свою страницу кейса, а мелкие работы остаются
-          в листингах. Это позволяет не смешивать крупные бренды в одну витрину.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
 </main>
       <footer class="site-footer">
   <div class="container">
     <div class="site-footer__panel">
       <p class="site-footer__text">
-        Разделы, подразделы и кейсы уже собираются из `content/`, а
-        опубликованные изображения приходят из `media/web/`.
+        Если что-то забыли всегда можно вернуться наверх
       </p>
       <a class="site-footer__top" href="#top">Наверх</a>
     </div>
@@ -264,5 +203,33 @@
 </footer>
 
     </div>
+    <script>
+      (() => {
+        const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (media.matches) return;
+
+        let ticking = false;
+
+        const updateBackground = () => {
+          const y = window.scrollY || window.pageYOffset || 0;
+          const root = document.documentElement;
+
+          root.style.setProperty("--bg-shift-x", `${y * 0.018}px`);
+          root.style.setProperty("--bg-shift-y", `${y * -0.042}px`);
+          root.style.setProperty("--bg-shift-x-2", `${y * -0.016}px`);
+          root.style.setProperty("--bg-shift-y-2", `${y * 0.03}px`);
+          ticking = false;
+        };
+
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(updateBackground);
+        };
+
+        updateBackground();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>

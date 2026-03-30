@@ -30,7 +30,7 @@
         />
       </span>
       <span class="brand__text">
-        <span class="brand__name">Designer Portfolio</span>
+        <span class="brand__name">Портфолио дизайнера</span>
         <span class="brand__title">Олеся Караульных</span>
       </span>
     </a>
@@ -82,7 +82,6 @@
 
 
     <div class="page-intro__panel">
-      <p class="page-eyebrow">Графика</p>
       <h1 class="page-title">Мокапы</h1>
       <p class="page-lead">Мокапы и презентационные визуалы для демонстрации продукта и фирменной подачи.</p>
     </div>
@@ -128,8 +127,7 @@
   <div class="container">
     <div class="site-footer__panel">
       <p class="site-footer__text">
-        Разделы, подразделы и кейсы уже собираются из `content/`, а
-        опубликованные изображения приходят из `media/web/`.
+        Если что-то забыли всегда можно вернуться наверх
       </p>
       <a class="site-footer__top" href="#top">Наверх</a>
     </div>
@@ -137,5 +135,33 @@
 </footer>
 
     </div>
+    <script>
+      (() => {
+        const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (media.matches) return;
+
+        let ticking = false;
+
+        const updateBackground = () => {
+          const y = window.scrollY || window.pageYOffset || 0;
+          const root = document.documentElement;
+
+          root.style.setProperty("--bg-shift-x", `${y * 0.018}px`);
+          root.style.setProperty("--bg-shift-y", `${y * -0.042}px`);
+          root.style.setProperty("--bg-shift-x-2", `${y * -0.016}px`);
+          root.style.setProperty("--bg-shift-y-2", `${y * 0.03}px`);
+          ticking = false;
+        };
+
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(updateBackground);
+        };
+
+        updateBackground();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>
