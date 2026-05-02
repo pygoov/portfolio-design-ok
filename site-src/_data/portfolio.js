@@ -20,6 +20,50 @@ function readJsonDirectory(dirPath) {
     .map((name) => readJson(path.join(dirPath, name)));
 }
 
+function pickFeaturedEntries(entries) {
+  const preferredIds = [
+    "marketplaces-martin",
+    "visualizations-rzhd-zdanie-dushevyh-vizualizatsii",
+    "labels-sheag",
+    "brand-photos-foto-realizovannyh-brendov",
+  ];
+
+  const byId = Object.fromEntries(entries.map((entry) => [entry.id, entry]));
+  const preferred = preferredIds.map((id) => byId[id]).filter(Boolean);
+
+  if (preferred.length >= 4) {
+    return preferred.slice(0, 4);
+  }
+
+  const fallback = [...entries]
+    .sort((left, right) => {
+      if (right.assets.length !== left.assets.length) {
+        return right.assets.length - left.assets.length;
+      }
+
+      return left.title.localeCompare(right.title, "ru");
+    })
+    .filter((entry) => !preferred.some((picked) => picked.id === entry.id));
+
+  return [...preferred, ...fallback].slice(0, 4);
+}
+
+function pickHomepageHero(entry) {
+  if (!entry) {
+    return null;
+  }
+
+  const preferredAsset = (entry.assets || []).find((asset) =>
+    asset.src.endsWith("/asset-07.webp"),
+  );
+
+  return {
+    ...entry,
+    heroImageUrl: `assets/media/${(preferredAsset || entry.assets[0]).src}`,
+    heroImageAlt: (preferredAsset || entry.assets[0]).alt,
+  };
+}
+
 module.exports = function () {
   const sections = readJson(path.join(CONTENT_ROOT, "taxonomy", "sections.json"));
   const subsections = readJson(
@@ -105,11 +149,28 @@ module.exports = function () {
   });
 
   const caseEntries = visibleEntries.filter((entry) => entry.hasPage);
+  const galleryEntries = visibleEntries.filter((entry) => entry.type === "gallery");
+  const featuredEntries = pickFeaturedEntries(visibleEntries);
+  const homepageHero = pickHomepageHero(entriesById["brand-photos-foto-realizovannyh-brendov"]);
+  const totalAssetCount = visibleEntries.reduce(
+    (count, entry) => count + entry.assets.length,
+    0,
+  );
 
   return {
     sections: sectionPages,
     subsections: normalizedSubsectionPages,
     entries: visibleEntries,
     caseEntries,
+    galleryEntries,
+    featuredEntries,
+    homepageHero,
+    stats: {
+      sectionCount: sectionPages.length,
+      subsectionCount: normalizedSubsectionPages.length,
+      caseCount: caseEntries.length,
+      galleryCount: galleryEntries.length,
+      assetCount: totalAssetCount,
+    },
   };
 };

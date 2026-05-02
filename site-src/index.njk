@@ -1,53 +1,79 @@
 ---
 layout: layouts/base.njk
-metaDescription: "Портфолио дизайнера Олеси Караульных: работы, направления и визуальная подача."
+metaDescription: "Портфолио дизайнера Олеси Караульных: кейсы по графике, интерьеру, упаковке и ретуши."
 ---
 {% set root = page.url | rootPrefix %}
+{% set stats = portfolio.stats %}
+{% set heroEntry = portfolio.featuredEntries[0] %}
+{% set homepageHero = portfolio.homepageHero %}
 
 <section class="hero">
   <div class="container hero__panel">
     <div class="hero__content">
       <div class="hero__eyebrow">Портфолио</div>
       <h1 class="hero__title">
-        Загляни, тут&nbsp;есть на&nbsp;что посмотреть
+        Хороший дизайн заметен сразу, плохой никогда, заметили?
       </h1>
       <p class="hero__note">
-        От айдентики и полиграфии до интерьерных решений и ретуши.
+        А теперь прочтите этот текст мелким шрифтом и спросите себя, что вы хотите
+        тут увидеть. Тут есть всё: без лишних слов нажмите на нужный раздел.
       </p>
 
       <div class="button-row">
         <a class="button button--primary" href="{{ root }}work/">
-          <span>Смотреть работы</span>
+          <span>Всё и сразу</span>
         </a>
         <a class="button button--ghost" href="{{ root }}contacts/">
-          <span>Связаться</span>
+          <span>Как связаться со мной?</span>
         </a>
       </div>
 
       <div class="hero__tags" aria-label="Направления дизайна">
-        <span class="hero__tag">Графика</span>
-        <span class="hero__tag">Интерьер</span>
-        <span class="hero__tag">Полиграфия</span>
-        <span class="hero__tag">Ретушь</span>
+        {% for section in portfolio.sections %}
+          <a class="hero__tag" href="{{ root }}{{ section.href }}">{{ section.title }}</a>
+        {% endfor %}
+      </div>
+
+      <div class="hero-stats" aria-label="Статистика портфолио">
+        <article class="hero-stat">
+          <strong class="hero-stat__value">{{ stats.caseCount }}</strong>
+          <span class="hero-stat__label">отдельных кейсов</span>
+        </article>
+        <article class="hero-stat">
+          <strong class="hero-stat__value">{{ stats.galleryCount }}</strong>
+          <span class="hero-stat__label">галерей и подборок</span>
+        </article>
+        <article class="hero-stat">
+          <strong class="hero-stat__value">{{ stats.assetCount }}</strong>
+          <span class="hero-stat__label">изображений в архиве</span>
+        </article>
       </div>
     </div>
 
-    <div class="hero__visual" aria-hidden="true">
+    <div class="hero__visual" aria-label="Фото продукции">
       <div class="hero__orbit hero__orbit--one"></div>
       <div class="hero__orbit hero__orbit--two"></div>
-      <div class="hero__card hero__card--main">
-        <p class="hero__card-label">Как устроено портфолио</p>
-        <h2 class="hero__card-title">Проекты собраны по направлениям</h2>
-        <p class="hero__card-text">
-          Так проще быстро найти нужный формат работы и посмотреть подходящие
-          примеры.
-        </p>
-      </div>
-      <div class="hero__mini-card hero__mini-card--top">
-        <span>Разделы и примеры</span>
-      </div>
+
+      <a class="hero__project-card hero__project-card--main" href="{{ root }}{{ homepageHero.href }}">
+        <div class="hero__project-media">
+          <img
+            class="hero__project-image"
+            src="{{ root }}{{ homepageHero.heroImageUrl }}"
+            alt="{{ homepageHero.heroImageAlt }}"
+          />
+        </div>
+        <div class="hero__project-body">
+          <p class="hero__card-label">{{ homepageHero.primarySection.title }}</p>
+          <h2 class="hero__card-title">Фото продукции и ретушь</h2>
+          <p class="hero__card-text">
+            Чистая предметная подача, аккуратный свет и визуалы, которые помогают
+            показать продукт убедительно и без перегруза.
+          </p>
+        </div>
+      </a>
+
       <div class="hero__mini-card hero__mini-card--bottom">
-        <span>Быстрый вход в работы</span>
+        <span>{{ stats.sectionCount }} раздела · {{ stats.subsectionCount }} подразделов</span>
       </div>
     </div>
   </div>
@@ -56,23 +82,85 @@ metaDescription: "Портфолио дизайнера Олеси Караул�
 <section class="section section--compact">
   <div class="container">
     <div class="section-head">
-      <p class="section-kicker">Что можно посмотреть</p>
+      <p class="section-kicker">Избранное</p>
+      <h2 class="section-title">С чего лучше начать просмотр</h2>
+      <p class="section-lead">
+        Несколько проектов с разным характером, чтобы сразу увидеть диапазон работ
+        и выбрать близкое по задаче направление.
+      </p>
+    </div>
+
+    <div class="entry-grid">
+      {% for entry in portfolio.featuredEntries %}
+        {% include "components/entry-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section capabilities">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-kicker">Как устроено</p>
+      <h2 class="section-title">Портфолио читается спокойнее</h2>
+      <p class="section-lead">
+        Главная страница помогает быстро понять структуру сайта и перейти к нужному
+        типу работы без длинного вступления.
+      </p>
+    </div>
+
+    <div class="capabilities__grid">
+      <article class="capability-card">
+        <p class="capability-card__eyebrow">Быстрый вход</p>
+        <h3 class="capability-card__title">На первом экране сразу реальные проекты</h3>
+        <p class="capability-card__text">
+          Вместо декоративной заставки главная показывает настоящие работы и сразу
+          задает правильное впечатление о портфолио.
+        </p>
+      </article>
+
+      <article class="capability-card">
+        <p class="capability-card__eyebrow">Понятная навигация</p>
+        <h3 class="capability-card__title">Разделы собраны по понятным направлениям</h3>
+        <p class="capability-card__text">
+          Графика, интерьер, печать и ретушь вынесены в ясные точки входа, чтобы
+          не приходилось искать нужный тип проекта вручную.
+        </p>
+      </article>
+
+      <article class="capability-card">
+        <p class="capability-card__eyebrow">Масштаб архива</p>
+        <h3 class="capability-card__title">Цифры помогают быстро оценить объем</h3>
+        <p class="capability-card__text">
+          Несколько коротких метрик на первом экране дают ощущение масштаба, но не
+          перегружают страницу лишними деталями.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-kicker">Направления</p>
       <h2 class="section-title">Разделы портфолио</h2>
       <p class="section-lead">
-        Работы собраны по направлениям, чтобы было проще быстро сориентироваться
-        и открыть именно то, что интересно сейчас.
+        Работы сгруппированы по задачам, чтобы можно было сразу перейти в нужный
+        тип дизайна и уже там смотреть проекты глубже.
       </p>
     </div>
 
     <div class="section-grid">
       {% for section in portfolio.sections %}
         <a class="section-card" href="{{ root }}{{ section.href }}">
-          <p class="section-card__eyebrow">{{ section.eyebrow }}</p>
+          <p class="section-card__eyebrow">
+            {{ section.subsections | length }} подраздел{{ "" if section.subsections | length == 1 else "а" }}
+          </p>
           <h2 class="section-card__title">{{ section.title }}</h2>
           <p class="section-card__lead">{{ section.lead }}</p>
           <p class="section-card__meta">
-            {{ section.subsections | length }} подраздел · {{ section.entries | length }}
-            кейс
+            {{ section.entries | length }} проектов внутри
           </p>
         </a>
       {% endfor %}
@@ -80,42 +168,22 @@ metaDescription: "Портфолио дизайнера Олеси Караул�
   </div>
 </section>
 
-<section class="section gallery">
+<section class="section">
   <div class="container">
-    <h2 class="section-title">Некоторые из работ</h2>
-    <p class="section-lead">
-      Несколько визуальных фрагментов для первого впечатления, если хочется
-      сначала просто посмотреть общий настрой и характер работ.
-    </p>
-
-    <div class="gallery__grid">
-      <figure class="gallery-card gallery-card--tall">
-        <img
-          class="gallery-card__image"
-          src="{{ root }}assets/reference/gallery-01.png"
-          alt="Подборка работ из портфолио, крупный визуал"
-        />
-        <figcaption class="gallery-card__caption">Избранный фрагмент</figcaption>
-      </figure>
-      <div class="gallery__stack">
-        <figure class="gallery-card">
-          <img
-            class="gallery-card__image"
-            src="{{ root }}assets/reference/gallery-02.jpg"
-            alt="Фрагмент визуальной подборки из портфолио"
-          />
-          <figcaption class="gallery-card__caption">Графика и акценты</figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <img
-            class="gallery-card__image"
-            src="{{ root }}assets/reference/gallery-03.jpeg"
-            alt="Ещё один фрагмент визуальной подборки из портфолио"
-          />
-          <figcaption class="gallery-card__caption">Форма и фактура</figcaption>
-        </figure>
+    <div class="projects-cta__panel">
+      <h2 class="projects-cta__title">Нужен быстрый переход к работам?</h2>
+      <p class="projects-cta__text">
+        Можно перейти в полный каталог или сразу открыть контакты, если нужный
+        формат задачи уже понятен.
+      </p>
+      <div class="button-row">
+        <a class="button button--primary" href="{{ root }}work/">
+          <span>Перейти в каталог</span>
+        </a>
+        <a class="button button--ghost button--ghost-light" href="{{ root }}contacts/">
+          <span>Связаться</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
-
